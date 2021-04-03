@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<!-- this how you make a comment -->
+	<head>
+	<title>Kevins fantastica server</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />	
+	</head>
+	<body>
+		
+		<h1>My first page of my site</h1>
+		
+		<!-- this is basic text part-->
+		<p id="text">Click on me, I get yellow as a citrus</p>
+		<a href="screenSaver.html" class="button">Go to my flashy screen saver</a>
+		
+		
+	</body>
+	<footer>
+	<p>
+	<p><a href="mailto:kevin@ullbrandt.com">kevin@ullbrandt.com</a></p>
+	</footer>
+	
+	
+	
+	<script>
+
+		document.getElementById('text').onclick = changeColor;   
+
+		function changeColor() {
+			document.body.style.color = "yellow";
+
+			return false;
+		}   
+
+	</script>
+</html>
