@@ -7,40 +7,34 @@ Ideér:
 -->
 <html>
 	<head>
-	<title>Kevins fantastiska webbsida</title>
-	<link rel="stylesheet" type="text/css" href="index.css" />	
+		<meta charset="utf-8">
+		<title>Kevins fantastiska webbsida</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/grund.css"/>	
 	</head>
 	<body>
 		
 		<nav id=navigation>
-			<li><a href="#index.html">Startsida</a></li>
-			<li><a herf="#index.html">Projekt</a></li>
-			<li><a herf="#index.html">Bilder</a></li>
+			<li><a href="index.html">Startsida</a></li>
+			<li><a href="projekt.html">Projekt</a></li>
+			<li><a href="index.html">Bilder</a></li>
+			
+			<nav id=login>
+				<li><a href="konto/inlogg.html">Logga&nbsp;in Registera&nbsp;dig</a></li>
+			</nav>
 		</nav>
 		
-		
-		<!-- this is basic text part-->
-		<p id="text">Click on me, I get yellow as a citrus</p>
-		<a href="screenSaver.html" class="button">Go to my flashy screen saver</a>
-		
+		<section>
+			<h2>Hejsan och varmt vällkomen till min showcase webbsida!</h2>
+			<p>
+			Denna webbsida är till för att vissa minakunskaper inom Html, css, script och även databaser. 
+			Ovan ser du en menybar där du kan klicka runt till mina olika projekt eller bilder på projekt 
+			och skiser. Du kan även testa mina databasser igenom att skapa ett konto eller logga in med användarnamn "abc" och lösenord "123".
+			</p>
+		</section>
 		
 	</body>
 	<footer>
-	<p>
-	<p><a href="mailto:kevin@ullbrandt.com">kevin@ullbrandt.com</a></p>
+		<p><a href="mailto:kevin@ullbrandt.com">kevin@ullbrandt.com</a></p>
 	</footer>
-	
-	
-	
-	<script>
-
-		document.getElementById('text').onclick = changeColor;   
-
-		function changeColor() {
-			document.body.style.color = "yellow";
-
-			return false;
-		}   
-
-	</script>
 </html>
