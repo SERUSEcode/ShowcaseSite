@@ -1,9 +1,30 @@
-section h2{
-	text-align: center;
-	margin: 50px 250px 0px 250px; /* top, right, bottom, left */
+#container {
+	background-color: lightblue;
+	height: 800px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
 }
 
-section p{
+.row {
+	background-color: pink;
+	height: 200px;
+	border-bottom: 1px solid black;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.slot {
+	height: 100%;
+	width: 33%;
+	background-color: white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	float: left;
 	text-align: center;
-	margin: 25px 250px 0px 250px; /* top, right, bottom, left */
+}
+
+.slot a {
+	margin-top: 80px;
+	display: block;
 }
