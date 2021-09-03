@@ -18,18 +18,20 @@
 			</nav>
 		</nav>
 		
-		<section>
-			<form action="../php/inlogg.php">
+		<section id="input_section">
+			<form id="input_form" action="../php/inlogg.php">
 				<label for="uname">Användarnamn: </label><br>
 				<input type="text" id="uname" name="uname" value=""><br>
 
 				<label for="key">Lösenord: </label><br>
 				<input type="text" id="key" name="key" value=""><br>
-			
-				<p>Om du inte har något konto så kan du registera här <a href="registering.html">"Skapa konto"</a></p>
+
+				<button type="button" id="button">Logga in</button>
+				<br>
+				<button type="button" id="button">Skapa konto</button>
 			</form>
 		</section>
-		
+
 	</body>
 	<footer>
 		<p><a href="mailto:kevin@ullbrandt.com">kevin@ullbrandt.com</a></p>
