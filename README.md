@@ -1,2 +1,2 @@
 # Main-showcase
-This will sho my skills for programming
+This will show my skills for programming
