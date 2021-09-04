@@ -2,6 +2,10 @@ body{
 	margin: 0;
 }
 
+h2, a, p {
+	font-family: Segoe UI;
+}
+
 #header{
 	margin-bottom: 50px;
 	text-align: center;
@@ -29,12 +33,10 @@ body{
 #navigation a {
 	/* Uses to remove link color and more */
 	font-size: 35px; 
-	font-family: Segoe UI;
 }
 
 #login a {
 	font-size: 15px; 
-	font-family: Segoe UI;
 	margin-right: 5px;
 }
 

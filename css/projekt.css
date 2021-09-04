@@ -6,7 +6,7 @@
 }
 
 #row {
-	margin: 0 50px 0px 50px; /* top, right, bottom, left */
+	margin: 0 100px 0px 100px; /* top, right, bottom, left */
 }
 
 .slot {
@@ -16,4 +16,15 @@
 	outline: 1px black solid;
 	float: left;
 	text-align: center;
+}
+
+.link_project {
+	margin-top: 10%;
+	display: block;
+	font-size: 35px; 
+}
+
+.link_download {
+	margin-top: 60%;
+	display: block;
 }
