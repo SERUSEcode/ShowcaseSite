@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mvc_webbsite</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav id=navigation>
+            <a href="@Url.Action("Index", "Home")">Startsida</a><br/>
+            <a href="@Url.Action("Project", "Home")">Projekt</a><br/>
+            <a href="@Url.Action("Info", "Home")">Om mig</a><br/>
+
+			<nav id=login>
+				<a href="../konto/inlogg.html">Logga&nbsp;in Registera&nbsp;dig</a>
+			</nav>
+		</nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+		<p><a href="mailto:kevin@ullbrandt.com">kevin@ullbrandt.com</a></p>
+	</footer>
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false) *@
+</body>
+</html>
