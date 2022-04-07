@@ -1,10 +1,10 @@
-#input_section {
+#inputSection {
     background: lightblue;
     margin: 25px 20% 0px 20%; /* top, right, bottom, left */
     height: 100%;
 }
 
-#input_form {
+#inputForm {
     margin-left: 5%;
     padding: 25px 0px 25px 0px; /* top, right, bottom, left */
 }
