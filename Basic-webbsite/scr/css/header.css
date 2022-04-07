@@ -20,6 +20,7 @@
 	width: 100%;
 	text-align: center;
 	padding: 20px 0px 25px 0px;
+	background-color: lightgray;
 	
 }
 
@@ -31,7 +32,7 @@
 
 #navigation li:hover {
 	/* Uses to remove link color and more */
-	background-color: lightgray;
+	background-color: gray;
 }
 
 #login a {

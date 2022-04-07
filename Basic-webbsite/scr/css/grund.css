@@ -1,12 +1,13 @@
 body{
 	margin: 0;
+	background-color: gray;
 }
 
 h2, a, p {
 	font-family: Segoe UI;
 }
 
-footer {
+footer p{
 	position: fixed;
    	bottom: 0;
   	width: 100%;
