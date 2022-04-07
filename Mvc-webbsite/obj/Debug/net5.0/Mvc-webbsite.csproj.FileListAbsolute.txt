@@ -38,3 +38,14 @@ C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\obj\Debug\net5.0\Mvc-w
 C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\obj\Debug\net5.0\Mvc-webbsite.csproj.CopyComplete
 C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\obj\Debug\net5.0\Razor\Views\Home\Info.cshtml.g.cs
 C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\obj\Debug\net5.0\Razor\Views\Home\Project.cshtml.g.cs
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kevin\Documents\repos\Main-showcase\Mvc-webbsite\obj\Debug\net5.0\staticwebassets\Mvc-webbsite.StaticWebAssets.xml
