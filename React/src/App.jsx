@@ -5,7 +5,7 @@ const App = () => {
 
     return (
         <h1>Hallå där världen</h1>
-    )
+    );
 
 };
 
