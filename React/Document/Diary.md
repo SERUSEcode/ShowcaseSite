@@ -13,3 +13,6 @@
 2022-09-27
 9. Realize that the structure for flie structure is none excisting
 8. adding structure to files
+
+2022-09-28
+10. Fixed so page is live at netlify

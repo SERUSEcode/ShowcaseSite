@@ -2,7 +2,7 @@
   "name": "showcase-react",
   "version": "1.0.0",
   "description": "",
-  "main": "public/index.js",
+  "main": "dist/index.js",
   "source": "src/index.js",
   "scripts": {
     "start": "set PORT=5001 && parcel public/index.html --https",
