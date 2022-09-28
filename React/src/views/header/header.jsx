@@ -1,18 +1,15 @@
 import React from "react";
 
 
-const HeaderPhone = (props) => {
+const Header = (props) => {
 
     return (
-        <div id="headerPhone">
+        <div id="header">
+
+            <h1>kul</h1>
 
         </div>
     );
 }
 
-const HeaderDesktop = (props) => {
-
-    return
-}
-
-export default HeaderPhone;
+export default Header;

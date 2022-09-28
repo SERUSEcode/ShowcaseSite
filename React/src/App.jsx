@@ -1,10 +1,16 @@
 import React from "react";
 
+import Header from "./views/header/header"
+
 
 const App = () => {
 
     return (
-        <h1>Hallå där världen</h1>
+
+        <Header>
+            <h1>Hallå där världen</h1>
+        </Header>
+        
     );
 
 };
