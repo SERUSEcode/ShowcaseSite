@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;;AAOA","sources":["src/index.css"],"sourcesContent":[".header {\r\n    background-image: url(\"../Document/indexBackground3.jpg\");\r\n    height: 100%;\r\n    width: 100%;\r\n    color: orange;\r\n}\r\n\r\np{\r\n    color: white;\r\n\r\n}"],"names":[],"version":3,"file":"React.61d3354a.css.map","sourceRoot":"/__parcel_source_root/"}
