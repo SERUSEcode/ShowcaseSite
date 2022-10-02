@@ -2,6 +2,7 @@ import React from "react";
 
 import HeaderImage from "./views/header/HeaderImage";
 import AboutMe from "./views/aboutme/AboutMe";
+import Navbar from "./views/navbar/Navbar";
 
 
 const App = () => {
@@ -10,9 +11,9 @@ const App = () => {
 
         <div>
             <HeaderImage>
-                <h1>Hallå där världen</h1>
             </HeaderImage>
             <AboutMe />
+            <Navbar />
         </div>
         
     );
