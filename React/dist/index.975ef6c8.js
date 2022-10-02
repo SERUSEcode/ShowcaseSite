@@ -5634,10 +5634,10 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _header = require("./views/header/header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
+var _headerImage = require("./views/header/HeaderImage");
+var _headerImageDefault = parcelHelpers.interopDefault(_headerImage);
 const App = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerImageDefault.default), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
             children: "Hall\xe5 d\xe4r v\xe4rlden"
         }, void 0, false, {
@@ -5661,7 +5661,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/header/header":"hcjEW"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/header/HeaderImage":"9rN3O"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -5811,11 +5811,11 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"hcjEW":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e270 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react-refresh/runtime":"786KC"}],"9rN3O":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4cdd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e270.prelude(module);
+$parcel$ReactRefreshHelpers$4cdd.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -5823,28 +5823,21 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const Header = (props)=>{
+const HeaderImage = (props)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "header",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "kul"
-        }, void 0, false, {
-            fileName: "src/views/header/header.jsx",
-            lineNumber: 9,
-            columnNumber: 13
-        }, undefined)
+        className: "header-image"
     }, void 0, false, {
-        fileName: "src/views/header/header.jsx",
+        fileName: "src/views/header/HeaderImage.jsx",
         lineNumber: 7,
         columnNumber: 9
     }, undefined);
 };
-_c = Header;
-exports.default = Header;
+_c = HeaderImage;
+exports.default = HeaderImage;
 var _c;
-$RefreshReg$(_c, "Header");
+$RefreshReg$(_c, "HeaderImage");
 
-  $parcel$ReactRefreshHelpers$e270.postlude(module);
+  $parcel$ReactRefreshHelpers$4cdd.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

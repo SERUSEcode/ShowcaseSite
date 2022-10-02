@@ -1,15 +1,15 @@
 import React from "react";
 
-import Header from "./views/header/header"
+import HeaderImage from "./views/header/HeaderImage"
 
 
 const App = () => {
 
     return (
 
-        <Header>
+        <HeaderImage>
             <h1>Hallå där världen</h1>
-        </Header>
+        </HeaderImage>
         
     );
 
