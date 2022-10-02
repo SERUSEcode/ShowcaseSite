@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeaderImage from "./views/header/HeaderImage";
 import AboutMe from "./views/aboutme/AboutMe";
 import Navbar from "./views/navbar/Navbar";
+import BrowseProjects from "./views/project/BrowseProjects";
 import Project from "./views/project/Project";
 
 
@@ -20,8 +21,11 @@ const App = () => {
                         <AboutMe />
                     </> } />
                     <Route exact path="/project" element={
-                        <Project />
+                        <BrowseProjects />
                      } />
+                    <Route path="/project/:id" element={<>
+                        <Project />
+                    </> } />
                     
                 </Routes>
             </BrowserRouter>
