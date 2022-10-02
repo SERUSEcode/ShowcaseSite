@@ -5991,7 +5991,7 @@ const Navbar = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _houseDoorSvgDefault.default),
                             alt: "Bootstrap",
-                            width: 50
+                            width: 40
                         }, void 0, false, {
                             fileName: "src/views/navbar/Navbar.jsx",
                             lineNumber: 18,
@@ -6023,7 +6023,7 @@ const Navbar = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _boxSvgDefault.default),
                             alt: "Bootstrap",
-                            width: 50
+                            width: 40
                         }, void 0, false, {
                             fileName: "src/views/navbar/Navbar.jsx",
                             lineNumber: 25,
@@ -6055,7 +6055,7 @@ const Navbar = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             src: (0, _journalsSvgDefault.default),
                             alt: "Bootstrap",
-                            width: 50
+                            width: 40
                         }, void 0, false, {
                             fileName: "src/views/navbar/Navbar.jsx",
                             lineNumber: 32,
