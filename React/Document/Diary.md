@@ -23,3 +23,5 @@
 13. starting with react router
 14. react routing complete, https://reactrouter.com/en/main , https://v5.reactrouter.com/web/guides/quick-start
 15. starting with project site
+16. Did buy a domain at google domain
+17. fixed conection between google domain and netlify. So I get secure connection on my site

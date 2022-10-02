@@ -15,21 +15,21 @@ const Navbar = () => {
         <div className="navbar-container">
             <a href="/">
                 <div href="/" className="navbar-box" >
-                    <img src={homeIconEmpty} alt="Bootstrap" width={50}></img>
+                    <img src={homeIconEmpty} alt="Bootstrap" width={40}></img>
                     <p>Home</p>
                 </div>
             </a>
             
             <a href="project">
                 <div className="navbar-box">
-                    <img src={boxIconEmpty} alt="Bootstrap" width={50}></img>
+                    <img src={boxIconEmpty} alt="Bootstrap" width={40}></img>
                     <p>Project</p>
                 </div>
             </a>
 
             <a href="journal">
                 <div className="navbar-box">
-                    <img src={journal} alt="Bootstrap" width={50}></img>
+                    <img src={journal} alt="Bootstrap" width={40}></img>
                     <p>Journal</p>
                 </div>
             </a>
