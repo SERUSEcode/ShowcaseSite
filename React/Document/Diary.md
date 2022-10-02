@@ -16,3 +16,6 @@
 
 2022-09-28
 10. Fixed so page is live at netlify
+
+2022-10-02
+11. started with fixing header of index
