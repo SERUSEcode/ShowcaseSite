@@ -85,7 +85,7 @@ const $34251def6ce61c5b$var$Navbar = ()=>{
                         /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("img", {
                             src: (0, (/*@__PURE__*/$parcel$interopDefault($5c41b35caffe9a24$exports))),
                             alt: "Bootstrap",
-                            width: 50
+                            width: 40
                         }),
                         /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
                             children: "Home"
@@ -101,7 +101,7 @@ const $34251def6ce61c5b$var$Navbar = ()=>{
                         /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("img", {
                             src: (0, (/*@__PURE__*/$parcel$interopDefault($0a43057de4c0cb22$exports))),
                             alt: "Bootstrap",
-                            width: 50
+                            width: 40
                         }),
                         /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
                             children: "Project"
@@ -117,7 +117,7 @@ const $34251def6ce61c5b$var$Navbar = ()=>{
                         /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("img", {
                             src: (0, (/*@__PURE__*/$parcel$interopDefault($628767407bd31d2e$exports))),
                             alt: "Bootstrap",
-                            width: 50
+                            width: 40
                         }),
                         /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
                             children: "Journal"
