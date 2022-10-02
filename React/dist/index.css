@@ -6,14 +6,22 @@ body, html {
 }
 
 .header-image {
-  height: 448px;
-  background-image: url("head-background2.62ae9184.jpg");
+  height: 390px;
+  background-image: url("head-background2.5f76e1c8.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-p {
-  color: #fff;
+.title {
+  text-align: center;
+  font-family: Arial;
+  font-size: 28px;
+}
+
+.standardtext {
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
