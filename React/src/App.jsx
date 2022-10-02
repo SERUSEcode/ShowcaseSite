@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeaderImage from "./views/header/HeaderImage";
 import AboutMe from "./views/aboutme/AboutMe";
 import Navbar from "./views/navbar/Navbar";
+import Project from "./views/project/Project";
 
 
 
@@ -19,7 +20,7 @@ const App = () => {
                         <AboutMe />
                     </> } />
                     <Route exact path="/project" element={
-                        <AboutMe />
+                        <Project />
                      } />
                     
                 </Routes>

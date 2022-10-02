@@ -3,6 +3,7 @@ body, html{
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #ededed;
   }
 
 .header-image{
@@ -23,16 +24,26 @@ body, html{
   text-align: center;
   font-family: Arial;
   font-size: 16;
+  margin: 0 30px 0 30px;
+}
+
+.project-container {
+  margin: 20px 20px 0 20px;
+  padding-top: 10px;
+  border-style: solid;
+  background-color: white;
+  text-align: left;
 }
 
 .navbar-container {
-  background-color: #d1d1d1;
+  background-color: #ededed;
   width: 100%;
   bottom: 0;
   position: fixed;
+  border-top: solid;
 }
 
-.box {
+.navbar-box {
   display: inline-block;
   width: 33%;
   text-align: center;
@@ -40,7 +51,7 @@ body, html{
   margin:10 0 10 0 ;
 }
 
-.box p {
+.navbar-box p {
   margin: 0;
 }
 

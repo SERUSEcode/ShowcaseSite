@@ -14,21 +14,21 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <a href="/">
-                <div href="/" className="box" >
+                <div href="/" className="navbar-box" >
                     <img src={homeIconEmpty} alt="Bootstrap" width={50}></img>
                     <p>Home</p>
                 </div>
             </a>
             
             <a href="project">
-                <div className="box">
+                <div className="navbar-box">
                     <img src={boxIconEmpty} alt="Bootstrap" width={50}></img>
                     <p>Project</p>
                 </div>
             </a>
 
             <a href="journal">
-                <div className="box">
+                <div className="navbar-box">
                     <img src={journal} alt="Bootstrap" width={50}></img>
                     <p>Journal</p>
                 </div>

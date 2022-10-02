@@ -19,5 +19,7 @@
 
 2022-10-02
 11. started with fixing header of index
-12. Done with index layout and css
+12. Done with index layout and css, using icons -> https://icons.getbootstrap.com/
 13. starting with react router
+14. react routing complete, https://reactrouter.com/en/main , https://v5.reactrouter.com/web/guides/quick-start
+15. starting with project site
