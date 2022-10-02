@@ -19,3 +19,5 @@
 
 2022-10-02
 11. started with fixing header of index
+12. Done with index layout and css
+13. starting with react router
