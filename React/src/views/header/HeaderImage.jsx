@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const HeaderImage = (props) => {
+const HeaderImage = () => {
 
     return (
         <div className="header-image"></div>

@@ -6,12 +6,23 @@ body, html {
   }
 
 .header-image{
-    background-image: url(img/head-background2.jpg); 
-    height: 448px;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: url(img/head-background2.jpg); 
+  height: 390px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
-  
+.title {
+  text-align: center;
+  font-family: Arial;
+  font-size: 28;
+
+}
+
+.standardtext {
+  text-align: center;
+  font-family: Arial;
+  font-size: 16;
 }
 
 /* #header h1{
@@ -21,8 +32,3 @@ body, html {
     color: orange;
     margin-top: 0px;
 } */
-
-p{
-    color: white;
-
-}

@@ -5636,18 +5636,33 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _headerImage = require("./views/header/HeaderImage");
 var _headerImageDefault = parcelHelpers.interopDefault(_headerImage);
+var _aboutMe = require("./views/aboutme/AboutMe");
+var _aboutMeDefault = parcelHelpers.interopDefault(_aboutMe);
 const App = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerImageDefault.default), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Hall\xe5 d\xe4r v\xe4rlden"
-        }, void 0, false, {
-            fileName: "src/App.jsx",
-            lineNumber: 11,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerImageDefault.default), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Hall\xe5 d\xe4r v\xe4rlden"
+                }, void 0, false, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 13,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 9
     }, undefined);
 };
@@ -5661,7 +5676,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/header/HeaderImage":"9rN3O"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/header/HeaderImage":"9rN3O","./views/aboutme/AboutMe":"19zz7"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -5823,7 +5838,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const HeaderImage = (props)=>{
+const HeaderImage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header-image"
     }, void 0, false, {
@@ -5838,6 +5853,76 @@ var _c;
 $RefreshReg$(_c, "HeaderImage");
 
   $parcel$ReactRefreshHelpers$4cdd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"19zz7":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b09d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b09d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const AboutMe = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "aboutme",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "title",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Kevin Ullbrandt"
+                    }, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 9,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: ".Net & Fullstack utvecklare"
+                    }, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 12,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "standardtext",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Maecenas posuere, ex et tincidunt hendrerit, lectus ipsum lacinia dolor, eget commodo purus sem vitae turpis. Ut tristique mi et convallis imperdiet. Morbi volutpat quam et"
+                }, void 0, false, {
+                    fileName: "src/views/aboutme/AboutMe.jsx",
+                    lineNumber: 18,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 17,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/views/aboutme/AboutMe.jsx",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_c = AboutMe;
+exports.default = AboutMe;
+var _c;
+$RefreshReg$(_c, "AboutMe");
+
+  $parcel$ReactRefreshHelpers$b09d.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
