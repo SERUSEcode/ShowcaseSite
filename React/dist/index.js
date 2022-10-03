@@ -94,7 +94,7 @@ const $34251def6ce61c5b$var$Navbar = ()=>{
                 })
             }),
             /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("a", {
-                href: "project",
+                href: "/project",
                 children: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
                     className: "navbar-box",
                     children: [
@@ -110,7 +110,7 @@ const $34251def6ce61c5b$var$Navbar = ()=>{
                 })
             }),
             /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("a", {
-                href: "journal",
+                href: "/journal",
                 children: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
                     className: "navbar-box",
                     children: [
@@ -134,10 +134,10 @@ var $34251def6ce61c5b$export$2e2bcd8739ae039 = $34251def6ce61c5b$var$Navbar;
 
 
 var $aed9b7eca3df1294$exports = {};
-$aed9b7eca3df1294$exports = JSON.parse('[{"id":1,"name":"test","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":20,"language":"HTML, CSS, Java"},{"id":2,"name":"kurt","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":40,"language":"HTML, R, Phyton"},{"id":2,"name":"kurt","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":40,"language":"HTML, R, Phyton"}]');
+$aed9b7eca3df1294$exports = JSON.parse('[{"id":1,"name":"Project: Showcase website","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","detailedDescription":"Nu g\xe5r jag igenom f\xf6r text hur detta gick till","time":20,"language":"HTML, CSS, Java","github":{"text":"Link to github","url":"www.fakelink1ToGithub.com"},"video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":2,"name":"kurt","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":40,"language":"HTML, R, Phyton","github":"www.fakelink2.com","video":"linktomy fancuvdeio 2"},{"id":3,"name":"kurtweb","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":403,"language":"HTML, R, Phyton","github":"www.fakelink3.com","video":"linktomy fancuvdeio 3"}]');
 
 
-const $b6886b9213eeabc6$var$Project = ()=>{
+const $f59a162081892c77$var$BrowseProjects = ()=>{
     return /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
         className: "container",
         children: [
@@ -153,31 +153,92 @@ const $b6886b9213eeabc6$var$Project = ()=>{
                     children: "H\xe4r kan du kolla igenom alla mina projekt som jag har gjort under skolg\xe5ngen eller under min fritid. Klicka p\xe5 korten f\xf6r att veta mera"
                 })
             }),
-            (0, (/*@__PURE__*/$parcel$interopDefault($aed9b7eca3df1294$exports))).map((project, i)=>/*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
-                    className: "project-container",
-                    children: [
-                        /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("div", {
-                            className: "title",
-                            children: project.name
-                        }),
-                        /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
-                            className: "standardtext",
-                            children: [
-                                /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
-                                    children: project.description
-                                }),
-                                /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
-                                    children: project.time
-                                }),
-                                /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
-                                    children: project.language
+            (0, (/*@__PURE__*/$parcel$interopDefault($aed9b7eca3df1294$exports))).map((project, i)=>/*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("a", {
+                    className: "linkToProject",
+                    href: `project/${project.id}`,
+                    children: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
+                        className: "project-container",
+                        children: [
+                            /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("div", {
+                                className: "title",
+                                children: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                                    children: project.name
                                 })
-                            ]
-                        })
-                    ]
+                            }),
+                            /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
+                                className: "standardtext",
+                                children: [
+                                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                                        children: project.description
+                                    }),
+                                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                                        children: project.time
+                                    }),
+                                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                                        children: project.language
+                                    })
+                                ]
+                            })
+                        ]
+                    })
                 })),
             /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("div", {
                 className: "scrollFed"
+            })
+        ]
+    });
+};
+var $f59a162081892c77$export$2e2bcd8739ae039 = $f59a162081892c77$var$BrowseProjects;
+
+
+
+
+
+
+const $b6886b9213eeabc6$var$Project = ()=>{
+    const params = (0, $gXNCa$reactrouterdom.useParams)();
+    //selectProject
+    const selProject = Object.values((0, (/*@__PURE__*/$parcel$interopDefault($aed9b7eca3df1294$exports)))).find((e)=>e.id == params.id);
+    return /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
+        className: "container",
+        children: [
+            /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("div", {
+                className: "title",
+                children: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                    children: selProject.name
+                })
+            }),
+            /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("div", {
+                className: "standardtext",
+                children: [
+                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("h3", {
+                        children: "Description"
+                    }),
+                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                        children: selProject.detailedDescription
+                    }),
+                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("h3", {
+                        children: "Videos"
+                    }),
+                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                        children: selProject.video.text
+                    }),
+                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("p", {
+                        children: selProject.video.url
+                    }),
+                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("h3", {
+                        children: "Links"
+                    }),
+                    /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsxs)("p", {
+                        children: [
+                            "Link till github:",
+                            /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)("a", {
+                                href: "selProject.github",
+                                children: selProject.github.url
+                            })
+                        ]
+                    })
+                ]
             })
         ]
     });
@@ -204,7 +265,14 @@ const $86170abfc0122593$var$App = ()=>{
                         /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)((0, $gXNCa$reactrouterdom.Route), {
                             exact: true,
                             path: "/project",
-                            element: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)((0, $b6886b9213eeabc6$export$2e2bcd8739ae039), {})
+                            element: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)((0, $f59a162081892c77$export$2e2bcd8739ae039), {})
+                        }),
+                        /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)((0, $gXNCa$reactrouterdom.Route), {
+                            exact: true,
+                            path: "/project/:id",
+                            element: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)((0, $gXNCa$reactjsxruntime.Fragment), {
+                                children: /*#__PURE__*/ (0, $gXNCa$reactjsxruntime.jsx)((0, $b6886b9213eeabc6$export$2e2bcd8739ae039), {})
+                            })
                         })
                     ]
                 })

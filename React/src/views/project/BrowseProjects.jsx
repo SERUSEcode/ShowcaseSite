@@ -22,10 +22,10 @@ const BrowseProjects = () => {
             {/* <input className="searchBar" value={"search"}></input> */}
 
             {dataSet.map((project, i) => 
-                <a className="linkToProject" href={`project/:${project.id}`}>
+                <a className="linkToProject" href={`project/${project.id}`}>
                     <div className="project-container">
                         <div className="title">
-                            {project.name}
+                            <p>{project.name}</p>
                         </div>
                         <div className="standardtext">
                             <p>{project.description}</p>

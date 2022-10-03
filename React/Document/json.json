@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "card": {
+        "name": "Project: Showcase website",
+        "description": "Detta project var bra för att. Detta gick dåligt för att... Jag lärde mig det här tack vare. ",
+        "time": 20,
+        "language": "HTML, CSS, Java"
+    },
+    "site": {
+        "name": "Project: Showcase website",
+        "description": "Nu går jag igenom för text hur detta gick till",
+        "github": {
+            "text": "Link to github",
+            "url": "www.fakelink1ToGithub.com"
+        },
+        "video": {
+            "text": "Här förklarar jag hur jag skapade projektet",
+            "url": "asdsad"
+        }
+    }
+}

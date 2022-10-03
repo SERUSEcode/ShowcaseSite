@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-import HeaderImage from "./views/header/HeaderImage";
-import AboutMe from "./views/aboutme/AboutMe";
-import Navbar from "./views/navbar/Navbar";
-import BrowseProjects from "./views/project/BrowseProjects";
-import Project from "./views/project/Project";
+import HeaderImage from "./views/header/HeaderImage"; //print imadge with my face and backgrund
+import AboutMe from "./views/aboutme/AboutMe"; //print text about me
+import Navbar from "./views/navbar/Navbar"; //print menu 
+import BrowseProjects from "./views/project/BrowseProjects"; //print project select
+import Project from "./views/project/Project"; //print one project
 
 
 
@@ -23,7 +23,7 @@ const App = () => {
                     <Route exact path="/project" element={
                         <BrowseProjects />
                      } />
-                    <Route path="/project/:id" element={<>
+                    <Route exact path="/project/:id" element={<>
                         <Project />
                     </> } />
                     

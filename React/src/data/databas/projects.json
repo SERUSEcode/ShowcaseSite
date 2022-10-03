@@ -1,12 +1,19 @@
 [
     {
         "id": 1,
-        "name": "test",
+        "name": "Project: Showcase website",
         "description": "Detta project var bra för att. Detta gick dåligt för att... Jag lärde mig det här tack vare. ",
+        "detailedDescription": "Nu går jag igenom för text hur detta gick till",
         "time": 20,
         "language": "HTML, CSS, Java",
-        "github": "www.fakelink1.com",
-        "video": "linktomy fancuvdeio 1"
+        "github": {
+            "text": "Link to github",
+            "url": "www.fakelink1ToGithub.com"
+        },
+        "video": {
+            "text": "Här förklarar jag hur jag skapade projektet",
+            "url": "www.fakelink1ToVideo.com"
+        }
     },
     {
         "id": 2,
