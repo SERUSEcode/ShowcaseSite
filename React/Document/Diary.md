@@ -25,3 +25,7 @@
 15. starting with project site
 16. Did buy a domain at google domain
 17. fixed conection between google domain and netlify. So I get secure connection on my site
+
+2022-10-03
+18. Fixed the navigation so i can navigate from index to all project to one project
+19. Fixed database, navigation and style for project

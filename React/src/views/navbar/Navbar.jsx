@@ -20,14 +20,14 @@ const Navbar = () => {
                 </div>
             </a>
             
-            <a href="project">
+            <a href="/project">
                 <div className="navbar-box">
                     <img src={boxIconEmpty} alt="Bootstrap" width={40}></img>
                     <p>Project</p>
                 </div>
             </a>
 
-            <a href="journal">
+            <a href="/journal">
                 <div className="navbar-box">
                     <img src={journal} alt="Bootstrap" width={40}></img>
                     <p>Journal</p>
