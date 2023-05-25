@@ -39,3 +39,4 @@
 
 2023-05-25
 -Adding mobile and pc version. I did with help of css and app.jsx. Quite fun way to add modules to clip and paste where you need it. Really smart
+-Looked into more UX and think i need to rethink the design of the webbsite. But not the UI bc the logic is good and the navigation is okay.
