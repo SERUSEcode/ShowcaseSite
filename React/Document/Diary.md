@@ -4,7 +4,7 @@
 -"npm init" in bash 
 3. Install basic react files 
 -"npm install react react-dom"
-4. Wrote "start": "set PORT=5001 && parcel public/index.html --https" in package.json
+4. Wrote "start": "set PORT=5001 && parcel public/index.html --https" in package.json"
 5. Install parcel 
 -"npm install --save-dev parcel"
 6. Made mockup for pc and mobile. Optimized for phone
@@ -29,3 +29,7 @@
 2022-10-03
 18. Fixed the navigation so i can navigate from index to all project to one project
 19. Fixed database, navigation and style for project
+
+2023-05-14
+- Starting to look at the project again with new motivation
+- Thinking of change tool from Vs Code to Vs 2022. Bc of easier packadge handler and other funtions.
