@@ -12,7 +12,7 @@ import journal from '../../../node_modules/bootstrap-icons/icons/journals.svg'
 const Navbar = () => {
 
     return (
-        <div className="navbar-container">
+        <div className="navbar-container-mobile">
             <a href="/">
                 <div href="/" className="navbar-box" >
                     <img src={homeIconEmpty} alt="Bootstrap" width={40}></img>
