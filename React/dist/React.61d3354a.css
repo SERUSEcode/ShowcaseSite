@@ -17,6 +17,36 @@ body, html {
   }
 }
 
+.centered-div {
+  height: 100vh;
+  background-color: #181a1e;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.TestColor {
+  text-align: center;
+  background-color: #181a1e;
+}
+
+.text {
+  color: #fff;
+  margin: 0;
+  padding: .01em 0;
+}
+
+#myName {
+  font-family: Sacramento, cursive;
+  font-size: 100px;
+}
+
+#myRole {
+  letter-spacing: .3em;
+  font-family: Pragati Narrow, sans-serif;
+  font-size: 20px;
+}
+
 .header-image {
   height: 390px;
   background-image: url("head-background2.999792da.jpg");

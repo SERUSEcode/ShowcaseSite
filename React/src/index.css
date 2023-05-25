@@ -17,7 +17,40 @@ body, html{
     display: none;
   }
 }
+
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181A1E;
+}
   
+.TestColor{
+  background-color: #181A1E;
+  text-align: center;
+  
+}
+
+
+.text {
+  margin: 0;
+  padding: 0.01em 0;
+  color: white;
+}
+
+#myName{
+  font-size: 100px;
+  font-family: 'Sacramento', cursive;
+}
+
+#myRole{
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+}
+
+
 .header-image{
   background-image: url(img/head-background2.jpg); 
   height: 390px;

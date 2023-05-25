@@ -1,3 +1,6 @@
+**How to start project**
+-npm start
+
 **Startup for project**
 1. Started with creating mapp REACT
 2. Create package.json with some stuff 
@@ -33,3 +36,6 @@
 2023-05-14
 - Starting to look at the project again with new motivation
 - Thinking of change tool from Vs Code to Vs 2022. Bc of easier packadge handler and other funtions.
+
+2023-05-25
+-Adding mobile and pc version. I did with help of css and app.jsx. Quite fun way to add modules to clip and paste where you need it. Really smart

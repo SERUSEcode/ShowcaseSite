@@ -6,6 +6,7 @@ import AboutMe from "./views/aboutme/AboutMe"; //print text about me
 import Navbar from "./views/navbar/Navbar"; //print menu 
 import BrowseProjects from "./views/project/BrowseProjects"; //print project select mobile
 import Project from "./views/project/Project"; //print one project
+import StartPage from "./views/StartPage/StartPage"; //print one project
 
 const App = () => {
     return (
@@ -13,7 +14,7 @@ const App = () => {
             <div className="Mobile">
                 <BrowserRouter>
                     <Routes>
-                        <Route exact path="/" element={<>
+                        <Route exact path="/homePage" element={<>
                             <HeaderImage />
                             <AboutMe />
                         </> } />
@@ -33,6 +34,9 @@ const App = () => {
                 <BrowserRouter>
                     <Routes>
                         <Route exact path="/" element={<>
+                            <StartPage />
+                        </> } />
+                        <Route exact path="/homePage" element={<>
                             <HeaderImage />
                             <AboutMe />
                             <BrowseProjects />
@@ -42,6 +46,7 @@ const App = () => {
                         } />
                         <Route exact path="/project/:id" element={<>
                             <Project />
+                            <Navbar />
                         </> } />
                         
                     </Routes>
