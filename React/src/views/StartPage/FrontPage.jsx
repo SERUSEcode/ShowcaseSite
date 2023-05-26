@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const StartPage = () => {
+const FrontPage = () => {
 
     return (
         <div className="centered-div">
@@ -19,4 +19,4 @@ const StartPage = () => {
     );
 }
 
-export default StartPage;
+export default FrontPage;
