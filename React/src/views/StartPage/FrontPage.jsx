@@ -10,11 +10,14 @@ const FrontPage = () => {
                 
                 <p id="myRole" className="text">SOFTWARE DEVELOPER</p>
                 
-                <a href="/homePage">
+                {/* <a href="/homePage">
                     <button class="custom-button">Click me</button>
+                </a> */}
+                <a href="/homePage">
+                    <div class="arrow"></div>
                 </a>
             </div>
-
+            
         </div>
     );
 }

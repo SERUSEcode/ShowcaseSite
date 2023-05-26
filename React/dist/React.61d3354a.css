@@ -113,6 +113,36 @@ body, html {
   margin: 0;
 }
 
+.arrow, .arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  margin: -20px 0 0 -20px;
+  top: 65%;
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  margin: -10px 0 0 -10px;
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  top: 50%;
+}
+
 a {
   color: #000;
 }

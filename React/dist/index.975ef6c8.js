@@ -10768,17 +10768,16 @@ const FrontPage = ()=>{
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                     href: "/homePage",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        class: "custom-button",
-                        children: "Click me"
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "arrow"
                     }, void 0, false, {
                         fileName: "src/views/StartPage/FrontPage.jsx",
-                        lineNumber: 14,
+                        lineNumber: 17,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 13,
+                    lineNumber: 16,
                     columnNumber: 17
                 }, undefined)
             ]
