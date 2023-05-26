@@ -15,9 +15,6 @@ const App = () => {
                 <BrowserRouter>
                     <Routes>
                         <Route exact path="/" element={<>
-                            <FrontPage />
-                        </> } />
-                        <Route exact path="/homePage" element={<>
                             <HeaderImage />
                             <AboutMe />
                             <Navbar />
