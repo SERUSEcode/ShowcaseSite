@@ -10,9 +10,9 @@ const FrontPage = () => {
                 
                 <p id="myRole" className="text">SOFTWARE DEVELOPER</p>
                 
-                {/* <a href="/homePage">
-                    <button  href="/homePage">Look at my projekts</button>
-                </a> */}
+                <a href="/homePage">
+                    <button class="custom-button">Click me</button>
+                </a>
             </div>
 
         </div>
