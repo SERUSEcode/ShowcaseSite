@@ -1,25 +1,15 @@
 import React from "react";
 
 import dataSet from "../../data/databas/projects.json"
+import { BrowseProjectsRef } from '../StartPage/FrontPage';
+
 
 const BrowseProjects = () => {
-
     return (
-        <div className="container">
+        <div className="container" id="container-BrowseProjects">
             <div className="title">
-            <p>My projects</p>
-
+                <h1>My projects</h1>
             </div>
-            <div className="standardtext">
-                <p>
-                    Här kan du kolla igenom alla mina 
-                    projekt som jag har gjort under 
-                    skolgången eller under min fritid. 
-                    Klicka på korten för att veta mera
-                </p>
-            </div>
-
-            {/* <input className="searchBar" value={"search"}></input> */}
 
             {dataSet.map((project, i) => 
                 <a className="linkToProject" href={`project/${project.id}`}>
@@ -35,9 +25,7 @@ const BrowseProjects = () => {
                     </div>
                 </a>
             )}
-
-            <div className="scrollFed"></div>
-
+            <div className="scrollFed"/>
         </div>
     );
 }
