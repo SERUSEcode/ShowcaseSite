@@ -5639,6 +5639,8 @@ var _headerImage = require("./views/header/HeaderImage"); //print imadge with my
 var _headerImageDefault = parcelHelpers.interopDefault(_headerImage);
 var _aboutMe = require("./views/aboutme/AboutMe"); //print text about me
 var _aboutMeDefault = parcelHelpers.interopDefault(_aboutMe);
+var _aboutMeStrip = require("./views/aboutme/AboutMeStrip"); //print text about me
+var _aboutMeStripDefault = parcelHelpers.interopDefault(_aboutMeStrip);
 var _navbar = require("./views/navbar/Navbar"); //print menu 
 var _navbarDefault = parcelHelpers.interopDefault(_navbar);
 var _browseProjects = require("./views/project/BrowseProjects"); //print project select mobile
@@ -5648,6 +5650,13 @@ var _projectDefault = parcelHelpers.interopDefault(_project);
 var _frontPage = require("./views/StartPage/FrontPage"); //print one project
 var _frontPageDefault = parcelHelpers.interopDefault(_frontPage);
 const App = ()=>{
+    // const BrowseProjects = useRef(null);
+    // const scrollToSection = (elementRef) => {
+    //     window.scrollTo({
+    //         top: elementRef.current.offsetTop,
+    //         behavior: 'smooth',
+    //     });
+    // };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5667,78 +5676,7 @@ const App = ()=>{
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 17,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/project",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
-                                    ]
-                                }, void 0, true)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 22,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/project/:id",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
-                                    ]
-                                }, void 0, true)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 26,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/journal",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
-                                }, void 0, false)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 30,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 16,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.jsx",
-                    lineNumber: 15,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 14,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "PC",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frontPageDefault.default), {}, void 0, false, void 0, void 0)
-                                }, void 0, false)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 42,
+                                lineNumber: 28,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5753,16 +5691,21 @@ const App = ()=>{
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 45,
+                                lineNumber: 33,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                                 exact: true,
                                 path: "/project",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0)
+                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
+                                    ]
+                                }, void 0, true)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 50,
+                                lineNumber: 38,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -5776,29 +5719,74 @@ const App = ()=>{
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 53,
+                                lineNumber: 42,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                exact: true,
+                                path: "/journal",
+                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
+                                }, void 0, false)
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 46,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 41,
+                        lineNumber: 27,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 40,
+                    lineNumber: 26,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 39,
+                lineNumber: 25,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "PC",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                            exact: true,
+                            path: "/",
+                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frontPageDefault.default), {}, void 0, false, void 0, void 0),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeStripDefault.default), {}, void 0, false, void 0, void 0),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0)
+                                ]
+                            }, void 0, true)
+                        }, void 0, false, {
+                            fileName: "src/App.jsx",
+                            lineNumber: 58,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 57,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 56,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 55,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 13,
+        lineNumber: 24,
         columnNumber: 9
     }, undefined);
 };
@@ -5812,7 +5800,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./views/header/HeaderImage":"9rN3O","./views/aboutme/AboutMe":"19zz7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/navbar/Navbar":"9NGVu","react-router-dom":"9xmpe","./views/project/Project":"cbKWM","./views/project/BrowseProjects":"3VfVf","./views/StartPage/FrontPage":"6ADMD"}],"9rN3O":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./views/header/HeaderImage":"9rN3O","./views/aboutme/AboutMe":"19zz7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/navbar/Navbar":"9NGVu","react-router-dom":"9xmpe","./views/project/Project":"cbKWM","./views/project/BrowseProjects":"3VfVf","./views/StartPage/FrontPage":"6ADMD","./views/aboutme/AboutMeStrip":"ekgNX"}],"9rN3O":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4cdd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -5826,6 +5814,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const HeaderImage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "mainimage",
         className: "header-image"
     }, void 0, false, {
         fileName: "src/views/header/HeaderImage.jsx",
@@ -10613,36 +10602,24 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _projectsJson = require("../../data/databas/projects.json");
 var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
+var _frontPage = require("../StartPage/FrontPage");
 const BrowseProjects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
+        id: "container-BrowseProjects",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "title",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "My projects"
                 }, void 0, false, {
                     fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 10,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "standardtext",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "H\xe4r kan du kolla igenom alla mina projekt som jag har gjort under skolg\xe5ngen eller under min fritid. Klicka p\xe5 korten f\xf6r att veta mera"
-                }, void 0, false, {
-                    fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 14,
+                    lineNumber: 11,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 13,
+                lineNumber: 10,
                 columnNumber: 13
             }, undefined),
             (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -10657,12 +10634,12 @@ const BrowseProjects = ()=>{
                                     children: project.name
                                 }, void 0, false, {
                                     fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 28,
+                                    lineNumber: 18,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/views/project/BrowseProjects.jsx",
-                                lineNumber: 27,
+                                lineNumber: 17,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10672,51 +10649,51 @@ const BrowseProjects = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 31,
+                                        lineNumber: 21,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: project.time
                                     }, void 0, false, {
                                         fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 32,
+                                        lineNumber: 22,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         children: project.language
                                     }, void 0, false, {
                                         fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 33,
+                                        lineNumber: 23,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/views/project/BrowseProjects.jsx",
-                                lineNumber: 30,
+                                lineNumber: 20,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/views/project/BrowseProjects.jsx",
-                        lineNumber: 26,
+                        lineNumber: 16,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 25,
+                    lineNumber: 15,
                     columnNumber: 17
                 }, undefined)),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "scrollFed"
             }, void 0, false, {
                 fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 39,
+                lineNumber: 28,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/views/project/BrowseProjects.jsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
@@ -10730,7 +10707,7 @@ $RefreshReg$(_c, "BrowseProjects");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6ADMD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../StartPage/FrontPage":"6ADMD"}],"6ADMD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c2ad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10742,7 +10719,18 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _browseProjects = require("../project/BrowseProjects");
+var _browseProjectsDefault = parcelHelpers.interopDefault(_browseProjects);
+var _s = $RefreshSig$();
 const FrontPage = ()=>{
+    _s();
+    const BrowseProjectsRef = (0, _react.useRef)(null);
+    const scrollToSection = (elementRef)=>{
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth"
+        });
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "centered-div",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10754,7 +10742,7 @@ const FrontPage = ()=>{
                     children: "Kevin Ullbrandt"
                 }, void 0, false, {
                     fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 9,
+                    lineNumber: 19,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -10763,35 +10751,37 @@ const FrontPage = ()=>{
                     children: "SOFTWARE DEVELOPER"
                 }, void 0, false, {
                     fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 11,
+                    lineNumber: 21,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "/homePage",
+                    href: "#container-BrowseProjects",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        class: "arrow"
+                        className: "arrow",
+                        id: "down-btn"
                     }, void 0, false, {
                         fileName: "src/views/StartPage/FrontPage.jsx",
-                        lineNumber: 17,
+                        lineNumber: 27,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 16,
+                    lineNumber: 26,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/views/StartPage/FrontPage.jsx",
-            lineNumber: 8,
+            lineNumber: 18,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/views/StartPage/FrontPage.jsx",
-        lineNumber: 7,
+        lineNumber: 17,
         columnNumber: 9
     }, undefined);
 };
+_s(FrontPage, "VPM2JdrT09AGncI7m9TSMd6/DEI=");
 _c = FrontPage;
 exports.default = FrontPage;
 var _c;
@@ -10802,7 +10792,55 @@ $RefreshReg$(_c, "FrontPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../project/BrowseProjects":"3VfVf"}],"ekgNX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b750 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b750.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _contactJson = require("../../data/databas/contact.json");
+var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
+const AboutMeStrip = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "WelcomeStrip",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            className: "title",
+            children: [
+                "Kevin Ullbrandt",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/views/aboutme/AboutMeStrip.jsx",
+            lineNumber: 9,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/views/aboutme/AboutMeStrip.jsx",
+        lineNumber: 8,
+        columnNumber: 9
+    }, undefined);
+};
+_c = AboutMeStrip;
+exports.default = AboutMeStrip;
+var _c;
+$RefreshReg$(_c, "AboutMeStrip");
+
+  $parcel$ReactRefreshHelpers$b750.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/contact.json":"cAwu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("react-dom");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
