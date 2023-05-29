@@ -60,16 +60,7 @@ body, html{
   text-align: center;
 }
 
-#myName{
-  font-size: 100px;
-  font-family: 'Sacramento', cursive;
-}
 
-#myRole{
-  font-family: 'Pragati Narrow', sans-serif;
-  font-size: 20px;
-  letter-spacing: 0.3em;
-}
 
 .header-image{
   background-image: url(img/head-background2.jpg); 
@@ -80,9 +71,7 @@ body, html{
 
 .title {
   text-align: center;
-  font-family: 'Pragati Narrow', sans-serif;
   font-size: 28;
-  
 }
 
 .title h1 {
@@ -94,28 +83,10 @@ body, html{
   margin: 5px 20px 0px 20px;
 }
 
-.text {
-  margin: 0;
-  padding: 0.01em 0;
-  color: white;
-}
-
-.standardtext {
-  text-align: left;
-  /* font-family: 'Optimistic Text Medium', Helvetica, Arial, sans-serif; */
-  font-family: 'Pragati Narrow', sans-serif;
-  font-weight: normal;
-  font-size: 16;
-  text-align: center;
-  margin: 0 30px 0 30px;
-  line-height: 130%;
-}
-
 #container-BrowseProjects {
   height: 100%;
   background-color: #18191A;
   color: white;
-  
 }
 
 #container-Projects {
@@ -144,7 +115,6 @@ body, html{
   bottom: 0;
   position: fixed;
   border-top: solid;
-  
 }
 
 .navbar-box {
@@ -195,7 +165,36 @@ body, html{
   animation-name: arrow;
 }
 
+#myRole, .title, .standardtext {
+  font-family: 'Pragati Narrow', sans-serif;
+  letter-spacing: 0.025em;
+}
 
+#myName{
+  font-size: 100px;
+  font-family: 'Sacramento', cursive;
+}
+
+#myRole{
+  font-size: 20px;
+  letter-spacing: 0.3em;
+}
+
+.text {
+  margin: 0;
+  padding: 0.01em 0;
+  color: white;
+}
+
+.standardtext {
+  text-align: left;
+  /* font-family: 'Optimistic Text Medium', Helvetica, Arial, sans-serif; */
+  font-weight: normal;
+  font-size: 16;
+  text-align: center;
+  margin: 0 30px 0 30px;
+  line-height: 130%;
+}
   
 a {
 	color: black;

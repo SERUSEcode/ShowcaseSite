@@ -47,17 +47,6 @@ body, html {
   background-color: #181a1e;
 }
 
-#myName {
-  font-family: Sacramento, cursive;
-  font-size: 100px;
-}
-
-#myRole {
-  letter-spacing: .3em;
-  font-family: Pragati Narrow, sans-serif;
-  font-size: 20px;
-}
-
 .header-image {
   height: 390px;
   background-image: url("head-background2.999792da.jpg");
@@ -67,7 +56,6 @@ body, html {
 
 .title {
   text-align: center;
-  font-family: Pragati Narrow, sans-serif;
   font-size: 28px;
 }
 
@@ -78,22 +66,6 @@ body, html {
 
 .linkToProject .title p {
   margin: 5px 20px 0;
-}
-
-.text {
-  color: #fff;
-  margin: 0;
-  padding: .01em 0;
-}
-
-.standardtext {
-  text-align: left;
-  text-align: center;
-  margin: 0 30px;
-  font-family: Pragati Narrow, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 130%;
 }
 
 #container-BrowseProjects {
@@ -168,6 +140,36 @@ body, html {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   top: 50%;
+}
+
+#myRole, .title, .standardtext {
+  letter-spacing: .025em;
+  font-family: Pragati Narrow, sans-serif;
+}
+
+#myName {
+  font-family: Sacramento, cursive;
+  font-size: 100px;
+}
+
+#myRole {
+  letter-spacing: .3em;
+  font-size: 20px;
+}
+
+.text {
+  color: #fff;
+  margin: 0;
+  padding: .01em 0;
+}
+
+.standardtext {
+  text-align: left;
+  text-align: center;
+  margin: 0 30px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 130%;
 }
 
 a {
