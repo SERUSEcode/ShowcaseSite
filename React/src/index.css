@@ -69,15 +69,7 @@ body, html{
   background-position: center center;
 }
 
-.title {
-  text-align: center;
-  font-size: 28;
-}
 
-.title h1 {
-  margin: 0;
-  padding: 25px 0 25px 0;
-}
 
 .linkToProject .title p {
   margin: 5px 20px 0px 20px;
@@ -93,6 +85,7 @@ body, html{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 0px 30px 0px 10px ;
 }
 
 .project-container {
@@ -164,6 +157,16 @@ body, html{
   animation-name: arrow;
 }
 
+.title {
+  text-align: center;
+  font-size: 35;
+}
+
+.title h1 {
+  margin: 0;
+  padding: 25px 0 25px 0;
+}
+
 #myRole, .title, .standardtext {
   font-family: 'Pragati Narrow', sans-serif;
   letter-spacing: 0.025em;
@@ -189,8 +192,7 @@ body, html{
   text-align: left;
   /* font-family: 'Optimistic Text Medium', Helvetica, Arial, sans-serif; */
   font-weight: normal;
-  font-size: 20;
-  text-align: center;
+  font-size: 25;
   margin: 0 30px 0 30px;
   line-height: 130%;
 }
