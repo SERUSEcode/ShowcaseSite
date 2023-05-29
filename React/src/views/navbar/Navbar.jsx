@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar-container-mobile">
-            <a href="/homePage">
+            <a href="/">
                 <div className="navbar-box" >
                     <img src={homeIconEmpty} alt="Bootstrap" width={40}></img>
                     <p>Home</p>

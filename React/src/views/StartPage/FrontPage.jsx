@@ -23,7 +23,7 @@ const FrontPage = () => {
                 {/* <a href="/homePage">
                     <button class="custom-button">Click me</button>
                 </a> href="/homePage"*/}
-                <a  href="#container-BrowseProjects">
+                <a  href="#WelcomeStrip">
                     <div className="arrow" id="down-btn"></div>
                 </a>
             </div>
