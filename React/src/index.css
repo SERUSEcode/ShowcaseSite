@@ -5,7 +5,6 @@ body, html{
   padding: 0;
   scroll-behavior: smooth;
   /* background-color: #ededed; */
-  background-color: #181a1e;
   }
 
 /* @media (min-width: 480px) {
@@ -83,6 +82,12 @@ body, html{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 28;
+  
+}
+
+.title h1 {
+  margin: 0;
+  padding: 25px 0 25px 0;
 }
 
 .linkToProject .title p {
@@ -99,7 +104,6 @@ body, html{
   text-align: left;
   /* font-family: 'Optimistic Text Medium', Helvetica, Arial, sans-serif; */
   font-family: 'Montserrat', sans-serif;
-
   font-weight: normal;
   font-size: 16;
   text-align: center;
@@ -109,6 +113,15 @@ body, html{
 
 #container-BrowseProjects {
   height: 100%;
+  background-color: #18191A;
+  color: white;
+  
+}
+
+#container-Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .project-container {
@@ -119,8 +132,9 @@ body, html{
   border-radius: 25px;
   width: 500px;
   height: 500px;
-  float: left;
+  /* float: left; */
   margin: 10px 10px 10px 10px; 
+  box-sizing: border-box;
 }
 
 .navbar-container-mobile {

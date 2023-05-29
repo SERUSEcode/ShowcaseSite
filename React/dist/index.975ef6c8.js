@@ -6114,7 +6114,7 @@ const Navbar = ()=>{
         className: "navbar-container-mobile",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/homePage",
+                href: "/",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "navbar-box",
                     children: [
@@ -10602,7 +10602,6 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _projectsJson = require("../../data/databas/projects.json");
 var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
-var _frontPage = require("../StartPage/FrontPage");
 const BrowseProjects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
@@ -10614,75 +10613,82 @@ const BrowseProjects = ()=>{
                     children: "My projects"
                 }, void 0, false, {
                     fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 11,
+                    lineNumber: 10,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 10,
+                lineNumber: 9,
                 columnNumber: 13
             }, undefined),
-            (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    className: "linkToProject",
-                    href: `project/${project.id}`,
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "project-container",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "title",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    children: project.name
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "container-Projects",
+                children: (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "linkToProject",
+                        href: `project/${project.id}`,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "project-container",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "title",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: project.name
+                                    }, void 0, false, {
+                                        fileName: "src/views/project/BrowseProjects.jsx",
+                                        lineNumber: 17,
+                                        columnNumber: 33
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 18,
+                                    lineNumber: 16,
+                                    columnNumber: 29
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "standardtext",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.description
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 20,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.time
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 21,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.language
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 22,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/views/project/BrowseProjects.jsx",
+                                    lineNumber: 19,
                                     columnNumber: 29
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/views/project/BrowseProjects.jsx",
-                                lineNumber: 17,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "standardtext",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: project.description
-                                    }, void 0, false, {
-                                        fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 21,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: project.time
-                                    }, void 0, false, {
-                                        fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 22,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: project.language
-                                    }, void 0, false, {
-                                        fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 23,
-                                        columnNumber: 29
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/views/project/BrowseProjects.jsx",
-                                lineNumber: 20,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/views/project/BrowseProjects.jsx",
+                            lineNumber: 15,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/views/project/BrowseProjects.jsx",
-                        lineNumber: 16,
+                        lineNumber: 14,
                         columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 15,
-                    columnNumber: 17
-                }, undefined)),
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/views/project/BrowseProjects.jsx",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "scrollFed"
             }, void 0, false, {
@@ -10693,7 +10699,7 @@ const BrowseProjects = ()=>{
         ]
     }, void 0, true, {
         fileName: "src/views/project/BrowseProjects.jsx",
-        lineNumber: 9,
+        lineNumber: 8,
         columnNumber: 9
     }, undefined);
 };
@@ -10707,7 +10713,7 @@ $RefreshReg$(_c, "BrowseProjects");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../StartPage/FrontPage":"6ADMD"}],"6ADMD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6ADMD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c2ad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10755,7 +10761,7 @@ const FrontPage = ()=>{
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "#container-BrowseProjects",
+                    href: "#WelcomeStrip",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "arrow",
                         id: "down-btn"
@@ -10817,7 +10823,8 @@ const AboutMeStrip = ()=>{
                     fileName: "src/views/aboutme/AboutMeStrip.jsx",
                     lineNumber: 11,
                     columnNumber: 17
-                }, undefined)
+                }, undefined),
+                "Add a welcoming text with some information about the website and the projects and maybe a contact me button"
             ]
         }, void 0, true, {
             fileName: "src/views/aboutme/AboutMeStrip.jsx",
