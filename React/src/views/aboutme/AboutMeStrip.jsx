@@ -5,12 +5,13 @@ import contactInfo from "../../data/databas/contact.json"
 const AboutMeStrip = () => {
 
     return (
-        <div id="WelcomeStrip">
-            <p className="title">
-                Kevin Ullbrandt
-                <br></br>
-                Add a welcoming text with some information about the website and the projects and maybe a contact me button
-            </p>
+        <div className="container">
+            <div id="WelcomeStrip">
+                <h1>Welcome to my project website</h1>
+                <p>
+                    Welcome to my project website. This site is for you who want a insight of my work and project i have done in the past. If you have any feedback, please contact me at kevin@ullbrandt.com.
+                </p>
+            </div>
         </div>
     );
 }

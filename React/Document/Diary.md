@@ -1,5 +1,8 @@
 **How to start project**
--npm start
+-Open React folder with VS code
+-Open terminal with bash
+-write "npm install" if its the first run on the pc
+-write "npm start" to start the project
 
 **Startup for project**
 1. Started with creating mapp REACT

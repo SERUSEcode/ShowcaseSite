@@ -5800,482 +5800,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./views/header/HeaderImage":"9rN3O","./views/aboutme/AboutMe":"19zz7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/navbar/Navbar":"9NGVu","react-router-dom":"9xmpe","./views/project/Project":"cbKWM","./views/project/BrowseProjects":"3VfVf","./views/StartPage/FrontPage":"6ADMD","./views/aboutme/AboutMeStrip":"ekgNX"}],"9rN3O":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4cdd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4cdd.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const HeaderImage = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "mainimage",
-        className: "header-image"
-    }, void 0, false, {
-        fileName: "src/views/header/HeaderImage.jsx",
-        lineNumber: 7,
-        columnNumber: 9
-    }, undefined);
-};
-_c = HeaderImage;
-exports.default = HeaderImage;
-var _c;
-$RefreshReg$(_c, "HeaderImage");
-
-  $parcel$ReactRefreshHelpers$4cdd.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("react-refresh/runtime");
-function debounce(func, delay) {
-    var args;
-    var timeout = undefined;
-    return function(args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            timeout = undefined;
-            func.call(null, args);
-        }, delay);
-    };
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30); // Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports; // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-} // When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        Refresh.register(exportValue, id + " %exports% " + key);
-    }
-}
-
-},{"react-refresh/runtime":"786KC"}],"19zz7":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b09d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b09d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _contactJson = require("../../data/databas/contact.json");
-var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
-const AboutMe = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "aboutme",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "title",
-                children: [
-                    "Kevin Ullbrandt",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 11,
-                        columnNumber: 17
-                    }, undefined),
-                    (0, _contactJsonDefault.default)[0].title
-                ]
-            }, void 0, true, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "standardtext",
-                children: "Maecenas posuere, ex et tincidunt hendrerit, lectus ipsum lacinia dolor, eget commodo purus sem vitae turpis. Ut tristique mi et convallis imperdiet. Morbi volutpat quam et"
-            }, void 0, false, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 14,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "title",
-                children: "Contact"
-            }, void 0, false, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 21,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "standardtext",
-                children: [
-                    "Phone: ",
-                    (0, _contactJsonDefault.default)[0].phone,
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 27,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 27,
-                        columnNumber: 23
-                    }, undefined),
-                    "E-mail: ",
-                    (0, _contactJsonDefault.default)[0].email,
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 29,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 29,
-                        columnNumber: 23
-                    }, undefined),
-                    "LinkedIn: ",
-                    (0, _contactJsonDefault.default)[0].linkedin
-                ]
-            }, void 0, true, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 24,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/views/aboutme/AboutMe.jsx",
-        lineNumber: 8,
-        columnNumber: 9
-    }, undefined);
-};
-_c = AboutMe;
-exports.default = AboutMe;
-var _c;
-$RefreshReg$(_c, "AboutMe");
-
-  $parcel$ReactRefreshHelpers$b09d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../data/databas/contact.json":"cAwu7"}],"cAwu7":[function(require,module,exports) {
-module.exports = JSON.parse('[{"title":".Net & Fullstack utvecklare","phone":"0793374078","email":"kevin@ullbrandt.com","linkedin":"linkedin@link.com"}]');
-
-},{}],"9NGVu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ab96 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ab96.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _houseDoorSvg = require("../../../node_modules/bootstrap-icons/icons/house-door.svg");
-var _houseDoorSvgDefault = parcelHelpers.interopDefault(_houseDoorSvg);
-var _houseDoorFillSvg = require("../../../node_modules/bootstrap-icons/icons/house-door-fill.svg");
-var _houseDoorFillSvgDefault = parcelHelpers.interopDefault(_houseDoorFillSvg);
-var _boxSvg = require("../../../node_modules/bootstrap-icons/icons/box.svg");
-var _boxSvgDefault = parcelHelpers.interopDefault(_boxSvg);
-var _boxFillSvg = require("../../../node_modules/bootstrap-icons/icons/box-fill.svg");
-var _boxFillSvgDefault = parcelHelpers.interopDefault(_boxFillSvg);
-var _journalsSvg = require("../../../node_modules/bootstrap-icons/icons/journals.svg");
-var _journalsSvgDefault = parcelHelpers.interopDefault(_journalsSvg);
-const Navbar = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "navbar-container-mobile",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "navbar-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _houseDoorSvgDefault.default),
-                            alt: "Bootstrap",
-                            width: 40
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 18,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 19,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/views/navbar/Navbar.jsx",
-                    lineNumber: 17,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/navbar/Navbar.jsx",
-                lineNumber: 16,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/project",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "navbar-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _boxSvgDefault.default),
-                            alt: "Bootstrap",
-                            width: 40
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 25,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Project"
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 26,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/views/navbar/Navbar.jsx",
-                    lineNumber: 24,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/navbar/Navbar.jsx",
-                lineNumber: 23,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/journal",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "navbar-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _journalsSvgDefault.default),
-                            alt: "Bootstrap",
-                            width: 40
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 32,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Journal"
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 33,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/views/navbar/Navbar.jsx",
-                    lineNumber: 31,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/navbar/Navbar.jsx",
-                lineNumber: 30,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/views/navbar/Navbar.jsx",
-        lineNumber: 15,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Navbar;
-exports.default = Navbar;
-var _c;
-$RefreshReg$(_c, "Navbar");
-
-  $parcel$ReactRefreshHelpers$ab96.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../../node_modules/bootstrap-icons/icons/house-door.svg":"gspkK","../../../node_modules/bootstrap-icons/icons/house-door-fill.svg":"4yIEI","../../../node_modules/bootstrap-icons/icons/box.svg":"7mfr3","../../../node_modules/bootstrap-icons/icons/box-fill.svg":"33p25","../../../node_modules/bootstrap-icons/icons/journals.svg":"e0jyR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gspkK":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "house-door.4a165fb6.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"4yIEI":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "house-door-fill.5d5fb008.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"7mfr3":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "box.0449adf9.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"33p25":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "box-fill.db3b838b.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"e0jyR":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "journals.adbff886.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./views/header/HeaderImage":"9rN3O","./views/aboutme/AboutMe":"19zz7","./views/aboutme/AboutMeStrip":"ekgNX","./views/navbar/Navbar":"9NGVu","./views/project/BrowseProjects":"3VfVf","./views/project/Project":"cbKWM","./views/StartPage/FrontPage":"6ADMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -10457,7 +9982,666 @@ function createURL(location) {
     return new URL(href, base);
 } //#endregion
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cbKWM":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"9rN3O":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4cdd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4cdd.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const HeaderImage = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "mainimage",
+        className: "header-image"
+    }, void 0, false, {
+        fileName: "src/views/header/HeaderImage.jsx",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_c = HeaderImage;
+exports.default = HeaderImage;
+var _c;
+$RefreshReg$(_c, "HeaderImage");
+
+  $parcel$ReactRefreshHelpers$4cdd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("react-refresh/runtime");
+function debounce(func, delay) {
+    var args;
+    var timeout = undefined;
+    return function(args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = undefined;
+            func.call(null, args);
+        }, delay);
+    };
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30); // Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports; // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+} // When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        Refresh.register(exportValue, id + " %exports% " + key);
+    }
+}
+
+},{"react-refresh/runtime":"786KC"}],"19zz7":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b09d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b09d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _contactJson = require("../../data/databas/contact.json");
+var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
+const AboutMe = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "aboutme",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "title",
+                children: [
+                    "Kevin Ullbrandt",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, undefined),
+                    (0, _contactJsonDefault.default)[0].title
+                ]
+            }, void 0, true, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "standardtext",
+                children: "Maecenas posuere, ex et tincidunt hendrerit, lectus ipsum lacinia dolor, eget commodo purus sem vitae turpis. Ut tristique mi et convallis imperdiet. Morbi volutpat quam et"
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "title",
+                children: "Contact"
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 21,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "standardtext",
+                children: [
+                    "Phone: ",
+                    (0, _contactJsonDefault.default)[0].phone,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 27,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 27,
+                        columnNumber: 23
+                    }, undefined),
+                    "E-mail: ",
+                    (0, _contactJsonDefault.default)[0].email,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 29,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 29,
+                        columnNumber: 23
+                    }, undefined),
+                    "LinkedIn: ",
+                    (0, _contactJsonDefault.default)[0].linkedin
+                ]
+            }, void 0, true, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 24,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/views/aboutme/AboutMe.jsx",
+        lineNumber: 8,
+        columnNumber: 9
+    }, undefined);
+};
+_c = AboutMe;
+exports.default = AboutMe;
+var _c;
+$RefreshReg$(_c, "AboutMe");
+
+  $parcel$ReactRefreshHelpers$b09d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/contact.json":"cAwu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cAwu7":[function(require,module,exports) {
+module.exports = JSON.parse('[{"title":".Net & Fullstack utvecklare","phone":"0793374078","email":"kevin@ullbrandt.com","linkedin":"linkedin@link.com"}]');
+
+},{}],"ekgNX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b750 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b750.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _contactJson = require("../../data/databas/contact.json");
+var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
+const AboutMeStrip = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            id: "WelcomeStrip",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Welcome to my project website"
+                }, void 0, false, {
+                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "Welcome to my project website. This site is for you who want a insight of my work and project i have done in the past. If you have any feedback, please contact me at kevin@ullbrandt.com."
+                }, void 0, false, {
+                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/views/aboutme/AboutMeStrip.jsx",
+            lineNumber: 9,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/views/aboutme/AboutMeStrip.jsx",
+        lineNumber: 8,
+        columnNumber: 9
+    }, undefined);
+};
+_c = AboutMeStrip;
+exports.default = AboutMeStrip;
+var _c;
+$RefreshReg$(_c, "AboutMeStrip");
+
+  $parcel$ReactRefreshHelpers$b750.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/contact.json":"cAwu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9NGVu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ab96 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ab96.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _houseDoorSvg = require("../../../node_modules/bootstrap-icons/icons/house-door.svg");
+var _houseDoorSvgDefault = parcelHelpers.interopDefault(_houseDoorSvg);
+var _houseDoorFillSvg = require("../../../node_modules/bootstrap-icons/icons/house-door-fill.svg");
+var _houseDoorFillSvgDefault = parcelHelpers.interopDefault(_houseDoorFillSvg);
+var _boxSvg = require("../../../node_modules/bootstrap-icons/icons/box.svg");
+var _boxSvgDefault = parcelHelpers.interopDefault(_boxSvg);
+var _boxFillSvg = require("../../../node_modules/bootstrap-icons/icons/box-fill.svg");
+var _boxFillSvgDefault = parcelHelpers.interopDefault(_boxFillSvg);
+var _journalsSvg = require("../../../node_modules/bootstrap-icons/icons/journals.svg");
+var _journalsSvgDefault = parcelHelpers.interopDefault(_journalsSvg);
+const Navbar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "navbar-container-mobile",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "/",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "navbar-box",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _houseDoorSvgDefault.default),
+                            alt: "Bootstrap",
+                            width: 40
+                        }, void 0, false, {
+                            fileName: "src/views/navbar/Navbar.jsx",
+                            lineNumber: 18,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/views/navbar/Navbar.jsx",
+                            lineNumber: 19,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/views/navbar/Navbar.jsx",
+                    lineNumber: 17,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/views/navbar/Navbar.jsx",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "/project",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "navbar-box",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _boxSvgDefault.default),
+                            alt: "Bootstrap",
+                            width: 40
+                        }, void 0, false, {
+                            fileName: "src/views/navbar/Navbar.jsx",
+                            lineNumber: 25,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Project"
+                        }, void 0, false, {
+                            fileName: "src/views/navbar/Navbar.jsx",
+                            lineNumber: 26,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/views/navbar/Navbar.jsx",
+                    lineNumber: 24,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/views/navbar/Navbar.jsx",
+                lineNumber: 23,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "/journal",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "navbar-box",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _journalsSvgDefault.default),
+                            alt: "Bootstrap",
+                            width: 40
+                        }, void 0, false, {
+                            fileName: "src/views/navbar/Navbar.jsx",
+                            lineNumber: 32,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Journal"
+                        }, void 0, false, {
+                            fileName: "src/views/navbar/Navbar.jsx",
+                            lineNumber: 33,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/views/navbar/Navbar.jsx",
+                    lineNumber: 31,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/views/navbar/Navbar.jsx",
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/views/navbar/Navbar.jsx",
+        lineNumber: 15,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Navbar;
+exports.default = Navbar;
+var _c;
+$RefreshReg$(_c, "Navbar");
+
+  $parcel$ReactRefreshHelpers$ab96.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../../node_modules/bootstrap-icons/icons/house-door.svg":"gspkK","../../../node_modules/bootstrap-icons/icons/house-door-fill.svg":"4yIEI","../../../node_modules/bootstrap-icons/icons/box.svg":"7mfr3","../../../node_modules/bootstrap-icons/icons/box-fill.svg":"33p25","../../../node_modules/bootstrap-icons/icons/journals.svg":"e0jyR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gspkK":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "house-door.4a165fb6.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"4yIEI":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "house-door-fill.5d5fb008.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"7mfr3":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "box.0449adf9.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"33p25":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "box-fill.db3b838b.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"e0jyR":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "journals.adbff886.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"3VfVf":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bcef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bcef.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _projectsJson = require("../../data/databas/projects.json");
+var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
+const BrowseProjects = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container",
+        id: "container-BrowseProjects",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "title",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "My projects"
+                }, void 0, false, {
+                    fileName: "src/views/project/BrowseProjects.jsx",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/views/project/BrowseProjects.jsx",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "container-Projects",
+                children: (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        className: "linkToProject",
+                        href: `project/${project.id}`,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "project-container",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "title",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: project.name
+                                    }, void 0, false, {
+                                        fileName: "src/views/project/BrowseProjects.jsx",
+                                        lineNumber: 17,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/views/project/BrowseProjects.jsx",
+                                    lineNumber: 16,
+                                    columnNumber: 29
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "standardtext",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.description
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 20,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.time
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 21,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.language
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 22,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/views/project/BrowseProjects.jsx",
+                                    lineNumber: 19,
+                                    columnNumber: 29
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/views/project/BrowseProjects.jsx",
+                            lineNumber: 15,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/views/project/BrowseProjects.jsx",
+                        lineNumber: 14,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/views/project/BrowseProjects.jsx",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "scrollFed"
+            }, void 0, false, {
+                fileName: "src/views/project/BrowseProjects.jsx",
+                lineNumber: 28,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/views/project/BrowseProjects.jsx",
+        lineNumber: 8,
+        columnNumber: 9
+    }, undefined);
+};
+_c = BrowseProjects;
+exports.default = BrowseProjects;
+var _c;
+$RefreshReg$(_c, "BrowseProjects");
+
+  $parcel$ReactRefreshHelpers$bcef.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iafBU":[function(require,module,exports) {
+module.exports = JSON.parse('[{"id":1,"name":"Project: Showcase website","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","detailedDescription":"Nu g\xe5r jag igenom f\xf6r text hur detta gick till","time":20,"language":"HTML, CSS, Java","github":{"text":"Link to github","url":"www.fakelink1ToGithub.com"},"video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":2,"name":"kurt","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":40,"language":"HTML, R, Phyton","github":"www.fakelink2.com","video":"linktomy fancuvdeio 2"},{"id":3,"name":"kurtweb","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":403,"language":"HTML, R, Phyton","github":"www.fakelink3.com","video":"linktomy fancuvdeio 3"}]');
+
+},{}],"cbKWM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c41a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10585,135 +10769,7 @@ $RefreshReg$(_c, "Project");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","../../data/databas/projects.json":"iafBU"}],"iafBU":[function(require,module,exports) {
-module.exports = JSON.parse('[{"id":1,"name":"Project: Showcase website","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","detailedDescription":"Nu g\xe5r jag igenom f\xf6r text hur detta gick till","time":20,"language":"HTML, CSS, Java","github":{"text":"Link to github","url":"www.fakelink1ToGithub.com"},"video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":2,"name":"kurt","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":40,"language":"HTML, R, Phyton","github":"www.fakelink2.com","video":"linktomy fancuvdeio 2"},{"id":3,"name":"kurtweb","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":403,"language":"HTML, R, Phyton","github":"www.fakelink3.com","video":"linktomy fancuvdeio 3"}]');
-
-},{}],"3VfVf":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bcef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bcef.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _projectsJson = require("../../data/databas/projects.json");
-var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
-const BrowseProjects = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
-        id: "container-BrowseProjects",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "title",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "My projects"
-                }, void 0, false, {
-                    fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 10,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                id: "container-Projects",
-                children: (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        className: "linkToProject",
-                        href: `project/${project.id}`,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "project-container",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "title",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: project.name
-                                    }, void 0, false, {
-                                        fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 17,
-                                        columnNumber: 33
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 16,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "standardtext",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: project.description
-                                        }, void 0, false, {
-                                            fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 20,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: project.time
-                                        }, void 0, false, {
-                                            fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 21,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: project.language
-                                        }, void 0, false, {
-                                            fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 22,
-                                            columnNumber: 33
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 19,
-                                    columnNumber: 29
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/views/project/BrowseProjects.jsx",
-                            lineNumber: 15,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/views/project/BrowseProjects.jsx",
-                        lineNumber: 14,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 12,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "scrollFed"
-            }, void 0, false, {
-                fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 28,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/views/project/BrowseProjects.jsx",
-        lineNumber: 8,
-        columnNumber: 9
-    }, undefined);
-};
-_c = BrowseProjects;
-exports.default = BrowseProjects;
-var _c;
-$RefreshReg$(_c, "BrowseProjects");
-
-  $parcel$ReactRefreshHelpers$bcef.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6ADMD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6ADMD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c2ad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10798,56 +10854,7 @@ $RefreshReg$(_c, "FrontPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../project/BrowseProjects":"3VfVf"}],"ekgNX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b750 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b750.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _contactJson = require("../../data/databas/contact.json");
-var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
-const AboutMeStrip = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "WelcomeStrip",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            className: "title",
-            children: [
-                "Kevin Ullbrandt",
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
-                    lineNumber: 11,
-                    columnNumber: 17
-                }, undefined),
-                "Add a welcoming text with some information about the website and the projects and maybe a contact me button"
-            ]
-        }, void 0, true, {
-            fileName: "src/views/aboutme/AboutMeStrip.jsx",
-            lineNumber: 9,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/views/aboutme/AboutMeStrip.jsx",
-        lineNumber: 8,
-        columnNumber: 9
-    }, undefined);
-};
-_c = AboutMeStrip;
-exports.default = AboutMeStrip;
-var _c;
-$RefreshReg$(_c, "AboutMeStrip");
-
-  $parcel$ReactRefreshHelpers$b750.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/contact.json":"cAwu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../project/BrowseProjects":"3VfVf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("react-dom");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;

@@ -19,13 +19,13 @@ body, html{
   }
 } */
 
-@media (min-width: 630px) {
+@media (min-width: 0px) {
   .Mobile {
     display: none;
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 0px) {
   .PC {
     display: none;
   }
@@ -34,7 +34,11 @@ body, html{
 #WelcomeStrip {
   background-color: white;
   border-radius: 15px;
-  height: 200px;
+  text-align: center;
+  font-size: 35;
+  margin: 0 5% 0 5%;
+  /* height: 200px; */
+  font-family: Pragati Narrow, sans-serif;
 }
 
 .custom-button {
@@ -60,8 +64,6 @@ body, html{
   text-align: center;
 }
 
-
-
 .header-image{
   background-image: url(img/head-background2.jpg); 
   height: 390px;
@@ -69,10 +71,13 @@ body, html{
   background-position: center center;
 }
 
-
-
 .linkToProject .title p {
   margin: 5px 20px 0px 20px;
+}
+
+.container {
+  height: 100%;
+  display: block;
 }
 
 #container-BrowseProjects {
@@ -132,7 +137,7 @@ body, html{
 {
   width: 40px;
   height: 40px;
-  top: 65%;
+  top: 75%;
   margin: -20px 0 0 -20px;
   -webkit-transform: rotate(45deg);
   border-left: none;
