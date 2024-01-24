@@ -12,11 +12,10 @@
     },
     {
         "id": 2,
-        "title": "kurt",
-        "description": "Detta project var bra för att. Detta gick dåligt för att... Jag lärde mig det här tack vare. ",
-        "time": 40,
-        "language": "HTML, R, Phyton",
-        "github" : "www.fakelink2.com",
+        "title": "Api and Notification Test",
+        "description": "This showcases me creating notification for both adriod and IoS with help of Azure. This is one part of a project I did in my intership. Sadly the project come to a standstill when the leading person of the project became ill and other project became proitized. Testing this project can be tricky and is not the idea. Rather take a look on how I code it instead.",
+        "language": "C#",
+        "githubLink" : "https://github.com/SERUSEcode/Azure-Notification",
         "video": "linktomy fancuvdeio 2"
     },
     {
