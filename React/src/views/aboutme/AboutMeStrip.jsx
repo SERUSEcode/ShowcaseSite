@@ -9,7 +9,10 @@ const AboutMeStrip = () => {
             <div id="WelcomeStrip">
                 <h1>Welcome to my project website</h1>
                 <p>
-                    This site is for you who want a insight of my work and project i have done in the past. If you want to look closer on how I created this webbsite, then please take <a href="https://github.com/SERUSEcode/ShowcaseSite/tree/main">click here</a>. If you have any feedback or want to come to contact with me, please contact me at kevin@ullbrandt.com.
+                    This site is for you who want a insight of my work and project i have done in the past. 
+                </p>
+                <p>
+                    You can take a closer look on how I created this webbsite <a href="https://github.com/SERUSEcode/ShowcaseSite/tree/main">by cliking here</a>. 
                 </p>
             </div>
         </div>

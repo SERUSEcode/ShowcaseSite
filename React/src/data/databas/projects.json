@@ -1,9 +1,17 @@
 [
     {
         "id": 1,
+        "title": "Filmstudion",
+        "description": "This project is made to showcase API, Databases and Autentication. The idea is that it is a webbsite for companies (also called filmstudio) to rent access to movies in cinimas. The project is not done yet, but I belive it still can show my skills and the idea behind it.",
+        "tags": "API, Notification, Authentication, HTML and C#",
+        "githubLink" : "https://github.com/SERUSEcode/filmstudion-SERUSEcode",
+        "video": "linktomy fancuvdeio 2"
+    },
+    {
+        "id": 2,
         "title": "API JWT Token authentication",
         "description": "Short showcase on how to use an API with JWT Tokens for create and autenticate an account. Note that the password is not encrypted yet. Comes with next patch",
-        "language": "C#",
+        "tags": "C#, JWT, Authentication and Login ",
         "githubLink": "https://github.com/SERUSEcode/JWTTokenLogin",
         "video": {
             "text": "Här förklarar jag hur jag skapade projektet",
@@ -11,20 +19,19 @@
         }
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Api and Notification Test",
         "description": "This showcases me creating notification for both adriod and IoS with help of Azure. This is one part of a project I did in my intership. Sadly the project come to a standstill when the leading person of the project became ill and other project became proitized. Testing this project can be tricky and is not the idea. Rather take a look on how I code it instead.",
-        "language": "C#",
+        "tags": "C#, API and Notification",
         "githubLink" : "https://github.com/SERUSEcode/Azure-Notification",
         "video": "linktomy fancuvdeio 2"
     },
     {
-        "id": 3,
-        "title": "kurtweb",
-        "description": "Detta project . ",
-        "time": 403,
-        "language": "HTML, R, Phyton",
-        "github" : "www.fakelink3.com",
+        "id": 4,
+        "title": "ProjektMeddelandecentralen",
+        "description": "This is one of my first API projects ever done. It shows an easy example of GET, POST and DELETE. But also APIs working with databases",
+        "tags": "C#, API and Database",
+        "githubLink" : "https://github.com/SERUSEcode/ProjektMeddelandecentralen",
         "video": "linktomy fancuvdeio 3"
     }
 ]

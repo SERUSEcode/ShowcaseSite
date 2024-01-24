@@ -10297,21 +10297,28 @@ const AboutMeStrip = ()=>{
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "This site is for you who want a insight of my work and project i have done in the past."
+                }, void 0, false, {
+                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: [
-                        "This site is for you who want a insight of my work and project i have done in the past. If you want to look closer on how I created this webbsite, then please take ",
+                        "You can take a closer look on how I created this webbsite ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "https://github.com/SERUSEcode/ShowcaseSite/tree/main",
-                            children: "click here"
+                            children: "by cliking here"
                         }, void 0, false, {
                             fileName: "src/views/aboutme/AboutMeStrip.jsx",
-                            lineNumber: 12,
-                            columnNumber: 185
+                            lineNumber: 15,
+                            columnNumber: 79
                         }, undefined),
-                        ". If you have any feedback or want to come to contact with me, please contact me at kevin@ullbrandt.com."
+                        "."
                     ]
                 }, void 0, true, {
                     fileName: "src/views/aboutme/AboutMeStrip.jsx",
-                    lineNumber: 11,
+                    lineNumber: 14,
                     columnNumber: 17
                 }, undefined)
             ]
@@ -10631,7 +10638,7 @@ const BrowseProjects = ()=>{
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: project.language
+                                            children: project.tags
                                         }, void 0, false, {
                                             fileName: "src/views/project/BrowseProjects.jsx",
                                             lineNumber: 51,
@@ -10685,7 +10692,7 @@ $RefreshReg$(_c1, "BrowseProjects");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iafBU":[function(require,module,exports) {
-module.exports = JSON.parse('[{"id":1,"title":"API JWT Token authentication","description":"Short showcase on how to use an API with JWT Tokens for create and autenticate an account. Note that the password is not encrypted yet. Comes with next patch","language":"C#","githubLink":"https://github.com/SERUSEcode/JWTTokenLogin","video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":2,"title":"Api and Notification Test","description":"This showcases me creating notification for both adriod and IoS with help of Azure. This is one part of a project I did in my intership. Sadly the project come to a standstill when the leading person of the project became ill and other project became proitized. Testing this project can be tricky and is not the idea. Rather take a look on how I code it instead.","language":"C#","githubLink":"https://github.com/SERUSEcode/Azure-Notification","video":"linktomy fancuvdeio 2"},{"id":3,"title":"kurtweb","description":"Detta project . ","time":403,"language":"HTML, R, Phyton","github":"www.fakelink3.com","video":"linktomy fancuvdeio 3"}]');
+module.exports = JSON.parse('[{"id":1,"title":"Filmstudion","description":"This project is made to showcase API, Databases and Autentication. The idea is that it is a webbsite for companies (also called filmstudio) to rent access to movies in cinimas. The project is not done yet, but I belive it still can show my skills and the idea behind it.","tags":"API, Notification, Authentication, HTML and C#","githubLink":"https://github.com/SERUSEcode/filmstudion-SERUSEcode","video":"linktomy fancuvdeio 2"},{"id":2,"title":"API JWT Token authentication","description":"Short showcase on how to use an API with JWT Tokens for create and autenticate an account. Note that the password is not encrypted yet. Comes with next patch","tags":"C#, JWT, Authentication and Login ","githubLink":"https://github.com/SERUSEcode/JWTTokenLogin","video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":3,"title":"Api and Notification Test","description":"This showcases me creating notification for both adriod and IoS with help of Azure. This is one part of a project I did in my intership. Sadly the project come to a standstill when the leading person of the project became ill and other project became proitized. Testing this project can be tricky and is not the idea. Rather take a look on how I code it instead.","tags":"C#, API and Notification","githubLink":"https://github.com/SERUSEcode/Azure-Notification","video":"linktomy fancuvdeio 2"},{"id":4,"title":"ProjektMeddelandecentralen","description":"This is one of my first API projects ever done. It shows an easy example of GET, POST and DELETE. But also APIs working with databases","tags":"C#, API and Database","githubLink":"https://github.com/SERUSEcode/ProjektMeddelandecentralen","video":"linktomy fancuvdeio 3"}]');
 
 },{}],"cbKWM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c41a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");

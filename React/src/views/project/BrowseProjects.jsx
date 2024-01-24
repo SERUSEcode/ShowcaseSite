@@ -48,7 +48,7 @@ const BrowseProjects = () => {
                                 <p>{project.description}</p>
                                 <p>{project.time}</p>
                                 <p>Link to Github: <a href={`${project.githubLink}`}>{project.githubLink}</a></p>
-                                <p>{project.language}</p>
+                                <p>{project.tags}</p>
                             </div>
                         </div>
                     </p>
