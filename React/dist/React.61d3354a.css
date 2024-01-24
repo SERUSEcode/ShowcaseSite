@@ -22,7 +22,7 @@ body, html {
   text-align: center;
   background-color: #fff;
   border-radius: 15px;
-  margin: 0 5%;
+  margin: 0 15%;
   font-family: Pragati Narrow, sans-serif;
   font-size: 35px;
 }
@@ -80,7 +80,7 @@ body, html {
 }
 
 .project-container {
-  width: 100%;
+  width: 800px;
   height: 500px;
   box-sizing: border-box;
   background-color: #dbd9db;
@@ -179,7 +179,7 @@ body, html {
   line-height: 130%;
 }
 
-a {
+p, a {
   color: #000;
 }
 

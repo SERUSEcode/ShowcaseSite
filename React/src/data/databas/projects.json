@@ -1,15 +1,10 @@
 [
     {
         "id": 1,
-        "name": "Project: Showcase website",
-        "description": "Detta project var bra för att. Detta gick dåligt för att... Jag lärde mig det här tack vare. ",
-        "detailedDescription": "Nu går jag igenom för text hur detta gick till",
-        "time": 20,
-        "language": "HTML, CSS, Java",
-        "github": {
-            "text": "Link to github",
-            "url": "www.fakelink1ToGithub.com"
-        },
+        "title": "API JWT Token authentication",
+        "description": "Short showcase on how to use an API with JWT Tokens for create and autenticate an account. Note that the password is not encrypted yet. Comes with next patch",
+        "language": "C#",
+        "githubLink": "https://github.com/SERUSEcode/JWTTokenLogin",
         "video": {
             "text": "Här förklarar jag hur jag skapade projektet",
             "url": "www.fakelink1ToVideo.com"
@@ -17,7 +12,7 @@
     },
     {
         "id": 2,
-        "name": "kurt",
+        "title": "kurt",
         "description": "Detta project var bra för att. Detta gick dåligt för att... Jag lärde mig det här tack vare. ",
         "time": 40,
         "language": "HTML, R, Phyton",
@@ -26,8 +21,8 @@
     },
     {
         "id": 3,
-        "name": "kurtweb",
-        "description": "Detta project var bra för att. Detta gick dåligt för att... Jag lärde mig det här tack vare. ",
+        "title": "kurtweb",
+        "description": "Detta project . ",
         "time": 403,
         "language": "HTML, R, Phyton",
         "github" : "www.fakelink3.com",

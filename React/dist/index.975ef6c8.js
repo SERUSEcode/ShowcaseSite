@@ -10297,8 +10297,19 @@ const AboutMeStrip = ()=>{
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "Welcome to my project website. This site is for you who want a insight of my work and project i have done in the past. If you have any feedback, please contact me at kevin@ullbrandt.com."
-                }, void 0, false, {
+                    children: [
+                        "This site is for you who want a insight of my work and project i have done in the past. If you want to look closer on how I created this webbsite, then please take ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "https://github.com/SERUSEcode/ShowcaseSite/tree/main",
+                            children: "click here"
+                        }, void 0, false, {
+                            fileName: "src/views/aboutme/AboutMeStrip.jsx",
+                            lineNumber: 12,
+                            columnNumber: 185
+                        }, undefined),
+                        ". If you have any feedback or want to come to contact with me, please contact me at kevin@ullbrandt.com."
+                    ]
+                }, void 0, true, {
                     fileName: "src/views/aboutme/AboutMeStrip.jsx",
                     lineNumber: 11,
                     columnNumber: 17
@@ -10527,7 +10538,24 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _projectsJson = require("../../data/databas/projects.json");
 var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
+async function GetRepositorys() {
+    const response = await fetch(`https://api.github.com/users/SERUSEcode/starred`);
+    let data = await response.json();
+    console.log(data);
+    return data;
+}
+_c = GetRepositorys;
 const BrowseProjects = ()=>{
+    // useEffect(() => {
+    //     // declare the data fetching function
+    //     const fetchData = async () => {
+    //         const response = await fetch('https://api.github.com/users/SERUSEcode/starred');
+    //         const data = await response.json();
+    //         setData(data);
+    //     }
+    //     const result = fetchData()
+    //     console.log(result);
+    // });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
         id: "container-BrowseProjects",
@@ -10538,17 +10566,17 @@ const BrowseProjects = ()=>{
                     children: "My projects"
                 }, void 0, false, {
                     fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 10,
+                    lineNumber: 37,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 9,
+                lineNumber: 36,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "container-Projects",
-                children: (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                children: (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "linkToProject",
                         href: `project/${project.id}`,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10557,15 +10585,15 @@ const BrowseProjects = ()=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "title",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: project.name
+                                        children: project.title
                                     }, void 0, false, {
                                         fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 17,
+                                        lineNumber: 45,
                                         columnNumber: 33
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 16,
+                                    lineNumber: 44,
                                     columnNumber: 29
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10575,63 +10603,81 @@ const BrowseProjects = ()=>{
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 20,
+                                            lineNumber: 48,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             children: project.time
                                         }, void 0, false, {
                                             fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 21,
+                                            lineNumber: 49,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: [
+                                                "Link to Github: ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: `${project.githubLink}`,
+                                                    children: project.githubLink
+                                                }, void 0, false, {
+                                                    fileName: "src/views/project/BrowseProjects.jsx",
+                                                    lineNumber: 50,
+                                                    columnNumber: 52
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 50,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             children: project.language
                                         }, void 0, false, {
                                             fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 22,
+                                            lineNumber: 51,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 19,
+                                    lineNumber: 47,
                                     columnNumber: 29
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/views/project/BrowseProjects.jsx",
-                            lineNumber: 15,
+                            lineNumber: 43,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/views/project/BrowseProjects.jsx",
-                        lineNumber: 14,
+                        lineNumber: 42,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 12,
+                lineNumber: 40,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "scrollFed"
             }, void 0, false, {
                 fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 28,
+                lineNumber: 57,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/views/project/BrowseProjects.jsx",
-        lineNumber: 8,
+        lineNumber: 35,
         columnNumber: 9
     }, undefined);
 };
-_c = BrowseProjects;
+_c1 = BrowseProjects;
 exports.default = BrowseProjects;
-var _c;
-$RefreshReg$(_c, "BrowseProjects");
+var _c, _c1;
+$RefreshReg$(_c, "GetRepositorys");
+$RefreshReg$(_c1, "BrowseProjects");
 
   $parcel$ReactRefreshHelpers$bcef.postlude(module);
 } finally {
@@ -10639,7 +10685,7 @@ $RefreshReg$(_c, "BrowseProjects");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iafBU":[function(require,module,exports) {
-module.exports = JSON.parse('[{"id":1,"name":"Project: Showcase website","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","detailedDescription":"Nu g\xe5r jag igenom f\xf6r text hur detta gick till","time":20,"language":"HTML, CSS, Java","github":{"text":"Link to github","url":"www.fakelink1ToGithub.com"},"video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":2,"name":"kurt","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":40,"language":"HTML, R, Phyton","github":"www.fakelink2.com","video":"linktomy fancuvdeio 2"},{"id":3,"name":"kurtweb","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":403,"language":"HTML, R, Phyton","github":"www.fakelink3.com","video":"linktomy fancuvdeio 3"}]');
+module.exports = JSON.parse('[{"id":1,"title":"API JWT Token authentication","description":"Short showcase on how to use an API with JWT Tokens for create and autenticate an account. Note that the password is not encrypted yet. Comes with next patch","language":"C#","githubLink":"https://github.com/SERUSEcode/JWTTokenLogin","video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":2,"title":"kurt","description":"Detta project var bra f\xf6r att. Detta gick d\xe5ligt f\xf6r att... Jag l\xe4rde mig det h\xe4r tack vare. ","time":40,"language":"HTML, R, Phyton","github":"www.fakelink2.com","video":"linktomy fancuvdeio 2"},{"id":3,"title":"kurtweb","description":"Detta project . ","time":403,"language":"HTML, R, Phyton","github":"www.fakelink3.com","video":"linktomy fancuvdeio 3"}]');
 
 },{}],"cbKWM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c41a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
