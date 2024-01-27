@@ -9,7 +9,7 @@ const BrowseProjects = () => {
     return (
         <div className="container" id="container-BrowseProjects">
             <div className="title">
-                <p className="text">My projects</p>
+                <p>My projects</p>
             </div>
             <div id="container-Projects">
                 {dataSet.map((project, i) => 

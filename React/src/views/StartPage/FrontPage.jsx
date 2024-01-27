@@ -17,10 +17,10 @@ const FrontPage = () => {
     return (
         <div className="centered-div">
             <div  className="TestColor">
-                <p id="myName" className="text">Kevin Ullbrandt</p>
+                <p id="myName" className="starttitletext">Kevin Ullbrandt</p>
                 
-                <p id="myRole" className="text">SOFTWARE DEVELOPER</p>
-                
+                <p id="myRole" className="starttitletext">SOFTWARE DEVELOPER</p>
+
                 <a  href="#container-BrowseProjects">
                     <div className="arrow" id="down-btn"></div>
                 </a>
