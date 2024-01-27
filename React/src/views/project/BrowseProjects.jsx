@@ -6,6 +6,7 @@ import dataSet from "../../data/databas/projects.json"
 
 const BrowseProjects = () => {
 
+    var i = 0;
     return (
         <div className="container" id="container-BrowseProjects">
             <div className="title">
@@ -22,7 +23,11 @@ const BrowseProjects = () => {
                                 <p>{project.description}</p>
                                 <p>{project.time}</p>
                                 <p>Link to Github: <a href={`${project.githubLink}`}>{project.githubLink}</a></p>
-                                <p>{project.tags}</p>
+                                <div className="tags">
+                                    {project.tags.map((tag, j) => (
+                                        <p className="tag">{tag.name}</p>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </p>

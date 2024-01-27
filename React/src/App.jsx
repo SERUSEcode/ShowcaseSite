@@ -50,9 +50,7 @@ const App = () => {
                     <Routes>
                         <Route exact path="/" element={<>
                             <FrontPage />
-                            <Content>
-                                
-                            </Content>  
+                            <Content />  
                         </> } />
                     </Routes>
                 </BrowserRouter>

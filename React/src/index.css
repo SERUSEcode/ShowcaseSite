@@ -4,7 +4,7 @@ body, html{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: #181A1E;;
+  background-color: wheat;
   /* background-color: #ededed; */
   }
 
@@ -42,6 +42,7 @@ body, html{
   align-items: center;
   height: 100vh;
   text-align: center;
+  background-color: #181A1E;
 }
 
 .custom-button {
@@ -57,6 +58,7 @@ body, html{
 #myRole, .title, .standardtext {
   font-family: 'Pragati Narrow', sans-serif;
   letter-spacing: 0.025em;
+  
 }
 
 #myName{
@@ -70,19 +72,12 @@ body, html{
 }
 
 .starttitletext {
-  margin: 0;
   padding: 0.01em 0;
   color: white;
 }
 
 .title {
-  text-align: center;
   font-size: 35;
-}
-
-.title h1 {
-  margin: 0;
-  padding: 25px 0 25px 0;
 }
 
 .arrow,
@@ -126,13 +121,14 @@ body, html{
 
 /* Main content */
 
-.content-container {
-  background-color: #DBD9DB;
+#content-container {
+  background-color: #fafafa;
   height: 100%;
-}
-
-.linkToProject .title p {
-  margin: 5px 20px 0px 20px;
+  width: 75%;
+  padding-left: 5%;
+  padding-top: 2.5%;
+  margin: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .container {
@@ -148,43 +144,67 @@ body, html{
 #container-Projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0px 30px 0px 10px ;
+
+  /* justify-content: space-evenly; */
+  /* padding: 0px 30px 0px 10px ; */
+}
+
+.linkToProject {
+  border-bottom: 5px solid black;
+  border-bottom-width: thin;
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .project-container {
-  margin: 20px 20px 0 20px;
-  padding-top: 10px;
-  border-width: 1px;
-  border-radius: 25px;
-  width: 800px;
-  height: 500px;
+  /* margin: 20px 20px 0 20px; */
+  /* padding-top: 10px; */
+  /* border-width: 1px; */
+  /* border-radius: 25px; */
+  /* width: 800px; */
+  /* height: 500px; */
   /* float: left; */
-  margin: 10px 10px 10px 10px; 
-  box-sizing: border-box;
+  /* margin: 10px 10px 10px 10px;  */
+  /* box-sizing: border-box; */
+  margin: 0 60px 0 30px;
 }
 
+.tags {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 
+.tag {
+  
+  margin-right: 8px;
+  border: 0 solid wheat;
+  border-width: thin; 
+  border-radius: 9999px;
+  padding: 5px;
+  background-color: wheat;
+  box-sizing: border-box;
+  
+  font-size: 15px;
+}
 
-
-
-
-
-
-
-
+#aboutme {
+  margin-bottom: 40px;
+}
 
 .standardtext {
   text-align: left;
   /* font-family: 'Optimistic Text Medium', Helvetica, Arial, sans-serif; */
   font-weight: normal;
   font-size: 25;
-  margin: 0 30px 0 30px;
+  
   line-height: 130%;
 }
 
 p {
   color: black;
+  margin: 0;
 }
   
 a {

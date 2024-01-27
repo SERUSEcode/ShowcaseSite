@@ -13,7 +13,7 @@ const Project = () => {
     return (
 
         <div className="container">
-            <div className="title">
+            <div className="projecttitle">
                 <p>{selProject.name}</p>
             </div>
             <div className="standardtext">
