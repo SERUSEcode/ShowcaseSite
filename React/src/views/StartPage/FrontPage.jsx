@@ -21,7 +21,7 @@ const FrontPage = () => {
                 
                 <p id="myRole" className="starttitletext">SOFTWARE DEVELOPER</p>
 
-                <a  href="#container-BrowseProjects">
+                <a  href="#content-container">
                     <div className="arrow" id="down-btn"></div>
                 </a>
             </div>

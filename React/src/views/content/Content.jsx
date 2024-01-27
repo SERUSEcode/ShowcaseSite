@@ -6,7 +6,7 @@ import BrowseProjects from "../project/BrowseProjects";
 const Content = () => {
 
     return (
-        <div className="content-container">
+        <div id="content-container">
             
             <AboutMe /> 
             <BrowseProjects />
