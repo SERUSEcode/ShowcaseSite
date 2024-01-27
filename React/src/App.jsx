@@ -2,12 +2,15 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useRef } from "react";
 
-// import AboutMe from "./views/aboutme/AboutMe"; //print text about me
+
+import Content from "./views/content/Content"; //print text about me
 // import AboutMeStrip from "./views/aboutme/AboutMeStrip"; //print text about me
 // import Navbar from "./views/navbar/Navbar"; //print menu 
-import BrowseProjects from "./views/project/BrowseProjects"; //print project select mobile
-import Project from "./views/project/Project"; //print one project
+import AboutMe from "./views/aboutme/AboutMe"; 
+import BrowseProjects from "./views/project/BrowseProjects"; 
+// import Project from "./views/project/Project"; //print one project
 import FrontPage from "./views/StartPage/FrontPage"; //print one project
+import Content from "./views/content/Content";
 
 const App = () => {
     return (
@@ -47,7 +50,9 @@ const App = () => {
                     <Routes>
                         <Route exact path="/" element={<>
                             <FrontPage />
-                            <BrowseProjects />
+                            <Content>
+                                
+                            </Content>  
                         </> } />
                     </Routes>
                 </BrowserRouter>

@@ -5635,13 +5635,15 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-// import AboutMe from "./views/aboutme/AboutMe"; //print text about me
+var _content = require("./views/content/Content"); //print text about me
+var _contentDefault = parcelHelpers.interopDefault(_content);
 // import AboutMeStrip from "./views/aboutme/AboutMeStrip"; //print text about me
 // import Navbar from "./views/navbar/Navbar"; //print menu 
-var _browseProjects = require("./views/project/BrowseProjects"); //print project select mobile
+var _aboutMe = require("./views/aboutme/AboutMe");
+var _aboutMeDefault = parcelHelpers.interopDefault(_aboutMe);
+var _browseProjects = require("./views/project/BrowseProjects");
 var _browseProjectsDefault = parcelHelpers.interopDefault(_browseProjects);
-var _project = require("./views/project/Project"); //print one project
-var _projectDefault = parcelHelpers.interopDefault(_project);
+// import Project from "./views/project/Project"; //print one project
 var _frontPage = require("./views/StartPage/FrontPage"); //print one project
 var _frontPageDefault = parcelHelpers.interopDefault(_frontPage);
 const App = ()=>{
@@ -5656,32 +5658,32 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frontPageDefault.default), {}, void 0, false, void 0, void 0),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0)
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contentDefault.default), {}, void 0, false, void 0, void 0)
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 48,
+                        lineNumber: 51,
                         columnNumber: 25
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 47,
+                    lineNumber: 50,
                     columnNumber: 21
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 46,
+                lineNumber: 49,
                 columnNumber: 17
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 45,
+            lineNumber: 48,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 14,
+        lineNumber: 17,
         columnNumber: 9
     }, undefined);
 };
@@ -5695,7 +5697,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./views/project/BrowseProjects":"3VfVf","./views/project/Project":"cbKWM","./views/StartPage/FrontPage":"6ADMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./views/StartPage/FrontPage":"6ADMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./views/content/Content":"hVv1b","./views/project/BrowseProjects":"3VfVf","./views/aboutme/AboutMe":"19zz7"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -9907,7 +9909,93 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"3VfVf":[function(require,module,exports) {
+},{}],"6ADMD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c2ad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c2ad.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _browseProjects = require("../project/BrowseProjects");
+var _browseProjectsDefault = parcelHelpers.interopDefault(_browseProjects);
+var _s = $RefreshSig$();
+// NOTE : Used for start screen
+const FrontPage = ()=>{
+    _s();
+    const BrowseProjectsRef = (0, _react.useRef)(null);
+    const scrollToSection = (elementRef)=>{
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth"
+        });
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "centered-div",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "TestColor",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    id: "myName",
+                    className: "starttitletext",
+                    children: "Kevin Ullbrandt"
+                }, void 0, false, {
+                    fileName: "src/views/StartPage/FrontPage.jsx",
+                    lineNumber: 20,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    id: "myRole",
+                    className: "starttitletext",
+                    children: "SOFTWARE DEVELOPER"
+                }, void 0, false, {
+                    fileName: "src/views/StartPage/FrontPage.jsx",
+                    lineNumber: 22,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "#container-BrowseProjects",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "arrow",
+                        id: "down-btn"
+                    }, void 0, false, {
+                        fileName: "src/views/StartPage/FrontPage.jsx",
+                        lineNumber: 25,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/views/StartPage/FrontPage.jsx",
+                    lineNumber: 24,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/views/StartPage/FrontPage.jsx",
+            lineNumber: 19,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/views/StartPage/FrontPage.jsx",
+        lineNumber: 18,
+        columnNumber: 9
+    }, undefined);
+};
+_s(FrontPage, "VPM2JdrT09AGncI7m9TSMd6/DEI=");
+_c = FrontPage;
+exports.default = FrontPage;
+var _c;
+$RefreshReg$(_c, "FrontPage");
+
+  $parcel$ReactRefreshHelpers$c2ad.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../project/BrowseProjects":"3VfVf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3VfVf":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bcef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -9930,7 +10018,6 @@ const BrowseProjects = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "title",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: "text",
                     children: "My projects"
                 }, void 0, false, {
                     fileName: "src/views/project/BrowseProjects.jsx",
@@ -10174,11 +10261,11 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"cbKWM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c41a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react-refresh/runtime":"786KC"}],"hVv1b":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d7b5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c41a.prelude(module);
+$parcel$ReactRefreshHelpers$d7b5.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -10186,128 +10273,46 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _projectsJson = require("../../data/databas/projects.json");
-var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
-var _s = $RefreshSig$();
-//NOTE: Prints all the projects
-const Project = ()=>{
-    _s();
-    const params = (0, _reactRouterDom.useParams)();
-    //selectProject
-    const selProject = Object.values((0, _projectsJsonDefault.default)).find((e)=>e.id == params.id);
+var _aboutMe = require("../aboutme/AboutMe");
+var _aboutMeDefault = parcelHelpers.interopDefault(_aboutMe);
+var _browseProjects = require("../project/BrowseProjects");
+var _browseProjectsDefault = parcelHelpers.interopDefault(_browseProjects);
+const Content = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
+        className: "content-container",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "title",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: selProject.name
-                }, void 0, false, {
-                    fileName: "src/views/project/Project.jsx",
-                    lineNumber: 17,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/project/Project.jsx",
-                lineNumber: 16,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeDefault.default), {}, void 0, false, {
+                fileName: "src/views/content/Content.jsx",
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "standardtext",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Description"
-                    }, void 0, false, {
-                        fileName: "src/views/project/Project.jsx",
-                        lineNumber: 20,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: selProject.detailedDescription
-                    }, void 0, false, {
-                        fileName: "src/views/project/Project.jsx",
-                        lineNumber: 21,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Videos"
-                    }, void 0, false, {
-                        fileName: "src/views/project/Project.jsx",
-                        lineNumber: 23,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: selProject.video.text
-                    }, void 0, false, {
-                        fileName: "src/views/project/Project.jsx",
-                        lineNumber: 24,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: selProject.video.url
-                    }, void 0, false, {
-                        fileName: "src/views/project/Project.jsx",
-                        lineNumber: 25,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Links"
-                    }, void 0, false, {
-                        fileName: "src/views/project/Project.jsx",
-                        lineNumber: 27,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            "Link till github:",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "selProject.github",
-                                children: selProject.github.url
-                            }, void 0, false, {
-                                fileName: "src/views/project/Project.jsx",
-                                lineNumber: 30,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/views/project/Project.jsx",
-                        lineNumber: 28,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/views/project/Project.jsx",
-                lineNumber: 19,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, {
+                fileName: "src/views/content/Content.jsx",
+                lineNumber: 12,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/views/project/Project.jsx",
-        lineNumber: 15,
+        fileName: "src/views/content/Content.jsx",
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
-_s(Project, "+jVsTcECDRo3yq2d7EQxlN9Ixog=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams)
-    ];
-});
-_c = Project;
-exports.default = Project;
+_c = Content;
+exports.default = Content;
 var _c;
-$RefreshReg$(_c, "Project");
+$RefreshReg$(_c, "Content");
 
-  $parcel$ReactRefreshHelpers$c41a.postlude(module);
+  $parcel$ReactRefreshHelpers$d7b5.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6ADMD":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c2ad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../aboutme/AboutMe":"19zz7","../project/BrowseProjects":"3VfVf"}],"19zz7":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b09d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c2ad.prelude(module);
+$parcel$ReactRefreshHelpers$b09d.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -10315,81 +10320,100 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _browseProjects = require("../project/BrowseProjects");
-var _browseProjectsDefault = parcelHelpers.interopDefault(_browseProjects);
-var _s = $RefreshSig$();
-// NOTE : Used for start screen
-const FrontPage = ()=>{
-    _s();
-    const BrowseProjectsRef = (0, _react.useRef)(null);
-    const scrollToSection = (elementRef)=>{
-        window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: "smooth"
-        });
-    };
+var _contactJson = require("../../data/databas/contact.json");
+var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
+const AboutMe = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "centered-div",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "TestColor",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    id: "myName",
-                    className: "text",
-                    children: "Kevin Ullbrandt"
-                }, void 0, false, {
-                    fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 20,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    id: "myRole",
-                    className: "text",
-                    children: "SOFTWARE DEVELOPER"
-                }, void 0, false, {
-                    fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 22,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "#container-BrowseProjects",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "arrow",
-                        id: "down-btn"
-                    }, void 0, false, {
-                        fileName: "src/views/StartPage/FrontPage.jsx",
-                        lineNumber: 25,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 24,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/views/StartPage/FrontPage.jsx",
-            lineNumber: 19,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/views/StartPage/FrontPage.jsx",
-        lineNumber: 18,
+        className: "aboutme",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "title",
+                children: [
+                    "Kevin Ullbrandt",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, undefined),
+                    (0, _contactJsonDefault.default)[0].title
+                ]
+            }, void 0, true, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "standardtext",
+                children: "Maecenas posuere, ex et tincidunt hendrerit, lectus ipsum lacinia dolor, eget commodo purus sem vitae turpis. Ut tristique mi et convallis imperdiet. Morbi volutpat quam et"
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "title",
+                children: "Contact"
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 21,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "standardtext",
+                children: [
+                    "Phone: ",
+                    (0, _contactJsonDefault.default)[0].phone,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 27,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 27,
+                        columnNumber: 23
+                    }, undefined),
+                    "E-mail: ",
+                    (0, _contactJsonDefault.default)[0].email,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 29,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                        fileName: "src/views/aboutme/AboutMe.jsx",
+                        lineNumber: 29,
+                        columnNumber: 23
+                    }, undefined),
+                    "LinkedIn: ",
+                    (0, _contactJsonDefault.default)[0].linkedin
+                ]
+            }, void 0, true, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 24,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/views/aboutme/AboutMe.jsx",
+        lineNumber: 8,
         columnNumber: 9
     }, undefined);
 };
-_s(FrontPage, "VPM2JdrT09AGncI7m9TSMd6/DEI=");
-_c = FrontPage;
-exports.default = FrontPage;
+_c = AboutMe;
+exports.default = AboutMe;
 var _c;
-$RefreshReg$(_c, "FrontPage");
+$RefreshReg$(_c, "AboutMe");
 
-  $parcel$ReactRefreshHelpers$c2ad.postlude(module);
+  $parcel$ReactRefreshHelpers$b09d.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../project/BrowseProjects":"3VfVf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/contact.json":"cAwu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cAwu7":[function(require,module,exports) {
+module.exports = JSON.parse('[{"title":".Net & Fullstack utvecklare","phone":"0793374078","email":"kevin@ullbrandt.com","linkedin":"linkedin@link.com"}]');
+
+},{}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("react-dom");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
