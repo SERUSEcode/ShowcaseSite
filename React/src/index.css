@@ -31,14 +31,13 @@ body, html{
   }
 }
 
-#WelcomeStrip {
-  background-color: white;
-  border-radius: 15px;
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #181A1E;
   text-align: center;
-  font-size: 35;
-  margin: 0 15% 0 15%;
-  /* height: 200px; */
-  font-family: Pragati Narrow, sans-serif;
 }
 
 .custom-button {
@@ -51,24 +50,23 @@ body, html{
   border-radius: 8px;
 }
 
-.centered-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #181A1E;
-}
-  
-.TestColor{
-  background-color: #181A1E;
-  text-align: center;
-}
+
 
 .header-image{
   background-image: url(img/head-background2.jpg); 
   height: 390px;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+#WelcomeStrip {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 35;
+  margin: 0 15% 0 15%;
+  /* height: 200px; */
+  font-family: Pragati Narrow, sans-serif;
 }
 
 .linkToProject .title p {
@@ -82,7 +80,7 @@ body, html{
 
 #container-BrowseProjects {
   height: 100%;
-  background-color: #18191A;
+  background-color: #181a1e;
   color: white;
 }
 

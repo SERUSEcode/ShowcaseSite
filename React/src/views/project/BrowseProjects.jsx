@@ -2,40 +2,14 @@ import React, { useEffect } from "react";
 
 import dataSet from "../../data/databas/projects.json"
 
-async function GetRepositorys() {
-    const response = await fetch(`https://api.github.com/users/SERUSEcode/starred`);
-    let data = await response.json();
-    console.log(data);
-    
-    return data;
-}
-
+//Noted for all projects
 
 const BrowseProjects = () => {
-
-    // useEffect(() => {
-    //     // declare the data fetching function
-    //     const fetchData = async () => {
-    //         const response = await fetch('https://api.github.com/users/SERUSEcode/starred');
-    //         const data = await response.json();
-    //         setData(data);
-          
-    //     }
-
-
-    //     const result = fetchData()
-
-    //     console.log(result);
-    // });
-
-    
-
 
     return (
         <div className="container" id="container-BrowseProjects">
             <div className="title">
-                <h1>My projects</h1>
-                {/* <p>{data[0].name}</p> */}
+                <p className="text">My projects</p>
             </div>
             <div id="container-Projects">
                 {dataSet.map((project, i) => 

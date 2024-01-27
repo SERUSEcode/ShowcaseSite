@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { useLocation, useParams } from 'react-router-dom'
 import dataSet from "../../data/databas/projects.json"
 
-const Project = () => {
+//NOTE: Prints all the projects
 
+const Project = () => {
 
     const params = useParams();
     //selectProject
@@ -16,8 +17,6 @@ const Project = () => {
                 <p>{selProject.name}</p>
             </div>
             <div className="standardtext">
-
-                
                 <h3>Description</h3>
                 <p>{selProject.detailedDescription}</p>
 
@@ -30,9 +29,7 @@ const Project = () => {
                     Link till github: 
                     <a href="selProject.github">{selProject.github.url}</a>
                 </p>
-
             </div>
-            
         </div>
     );
 }

@@ -5635,14 +5635,9 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _headerImage = require("./views/header/HeaderImage"); //print imadge with my face and backgrund
-var _headerImageDefault = parcelHelpers.interopDefault(_headerImage);
-var _aboutMe = require("./views/aboutme/AboutMe"); //print text about me
-var _aboutMeDefault = parcelHelpers.interopDefault(_aboutMe);
-var _aboutMeStrip = require("./views/aboutme/AboutMeStrip"); //print text about me
-var _aboutMeStripDefault = parcelHelpers.interopDefault(_aboutMeStrip);
-var _navbar = require("./views/navbar/Navbar"); //print menu 
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+// import AboutMe from "./views/aboutme/AboutMe"; //print text about me
+// import AboutMeStrip from "./views/aboutme/AboutMeStrip"; //print text about me
+// import Navbar from "./views/navbar/Navbar"; //print menu 
 var _browseProjects = require("./views/project/BrowseProjects"); //print project select mobile
 var _browseProjectsDefault = parcelHelpers.interopDefault(_browseProjects);
 var _project = require("./views/project/Project"); //print one project
@@ -5650,143 +5645,43 @@ var _projectDefault = parcelHelpers.interopDefault(_project);
 var _frontPage = require("./views/StartPage/FrontPage"); //print one project
 var _frontPageDefault = parcelHelpers.interopDefault(_frontPage);
 const App = ()=>{
-    // const BrowseProjects = useRef(null);
-    // const scrollToSection = (elementRef) => {
-    //     window.scrollTo({
-    //         top: elementRef.current.offsetTop,
-    //         behavior: 'smooth',
-    //     });
-    // };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "Mobile",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerImageDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
-                                    ]
-                                }, void 0, true)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 28,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/homePage",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerImageDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0)
-                                    ]
-                                }, void 0, true)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 33,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/project",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
-                                    ]
-                                }, void 0, true)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 38,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/project/:id",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectDefault.default), {}, void 0, false, void 0, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
-                                    ]
-                                }, void 0, true)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 42,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                                exact: true,
-                                path: "/journal",
-                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, void 0, void 0)
-                                }, void 0, false)
-                            }, void 0, false, {
-                                fileName: "src/App.jsx",
-                                lineNumber: 46,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 27,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.jsx",
-                    lineNumber: 26,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 25,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "PC",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                            exact: true,
-                            path: "/",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frontPageDefault.default), {}, void 0, false, void 0, void 0),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeStripDefault.default), {}, void 0, false, void 0, void 0),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0)
-                                ]
-                            }, void 0, true)
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 58,
-                            columnNumber: 25
-                        }, undefined)
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "PC",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        exact: true,
+                        path: "/",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frontPageDefault.default), {}, void 0, false, void 0, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _browseProjectsDefault.default), {}, void 0, false, void 0, void 0)
+                            ]
+                        }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 57,
-                        columnNumber: 21
+                        lineNumber: 48,
+                        columnNumber: 25
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 56,
-                    columnNumber: 17
+                    lineNumber: 47,
+                    columnNumber: 21
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 55,
-                columnNumber: 13
+                lineNumber: 46,
+                columnNumber: 17
             }, undefined)
-        ]
-    }, void 0, true, {
+        }, void 0, false, {
+            fileName: "src/App.jsx",
+            lineNumber: 45,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 24,
+        lineNumber: 14,
         columnNumber: 9
     }, undefined);
 };
@@ -5800,7 +5695,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./views/header/HeaderImage":"9rN3O","./views/aboutme/AboutMe":"19zz7","./views/aboutme/AboutMeStrip":"ekgNX","./views/navbar/Navbar":"9NGVu","./views/project/BrowseProjects":"3VfVf","./views/project/Project":"cbKWM","./views/StartPage/FrontPage":"6ADMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./views/project/BrowseProjects":"3VfVf","./views/project/Project":"cbKWM","./views/StartPage/FrontPage":"6ADMD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -10012,11 +9907,11 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"9rN3O":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4cdd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"3VfVf":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bcef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4cdd.prelude(module);
+$parcel$ReactRefreshHelpers$bcef.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -10024,27 +9919,142 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const HeaderImage = ()=>{
+var _projectsJson = require("../../data/databas/projects.json");
+var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
+//Noted for all projects
+const BrowseProjects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "mainimage",
-        className: "header-image"
-    }, void 0, false, {
-        fileName: "src/views/header/HeaderImage.jsx",
-        lineNumber: 7,
+        className: "container",
+        id: "container-BrowseProjects",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "title",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text",
+                    children: "My projects"
+                }, void 0, false, {
+                    fileName: "src/views/project/BrowseProjects.jsx",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/views/project/BrowseProjects.jsx",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "container-Projects",
+                children: (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "linkToProject",
+                        href: `project/${project.id}`,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "project-container",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "title",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: project.title
+                                    }, void 0, false, {
+                                        fileName: "src/views/project/BrowseProjects.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/views/project/BrowseProjects.jsx",
+                                    lineNumber: 18,
+                                    columnNumber: 29
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "standardtext",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.description
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 22,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.time
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 23,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: [
+                                                "Link to Github: ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                    href: `${project.githubLink}`,
+                                                    children: project.githubLink
+                                                }, void 0, false, {
+                                                    fileName: "src/views/project/BrowseProjects.jsx",
+                                                    lineNumber: 24,
+                                                    columnNumber: 52
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 24,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: project.tags
+                                        }, void 0, false, {
+                                            fileName: "src/views/project/BrowseProjects.jsx",
+                                            lineNumber: 25,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/views/project/BrowseProjects.jsx",
+                                    lineNumber: 21,
+                                    columnNumber: 29
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/views/project/BrowseProjects.jsx",
+                            lineNumber: 17,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/views/project/BrowseProjects.jsx",
+                        lineNumber: 16,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/views/project/BrowseProjects.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "scrollFed"
+            }, void 0, false, {
+                fileName: "src/views/project/BrowseProjects.jsx",
+                lineNumber: 31,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/views/project/BrowseProjects.jsx",
+        lineNumber: 10,
         columnNumber: 9
     }, undefined);
 };
-_c = HeaderImage;
-exports.default = HeaderImage;
+_c = BrowseProjects;
+exports.default = BrowseProjects;
 var _c;
-$RefreshReg$(_c, "HeaderImage");
+$RefreshReg$(_c, "BrowseProjects");
 
-  $parcel$ReactRefreshHelpers$4cdd.postlude(module);
+  $parcel$ReactRefreshHelpers$bcef.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iafBU":[function(require,module,exports) {
+module.exports = JSON.parse('[{"id":1,"title":"Filmstudion","description":"This project is made to showcase API, Databases and Autentication. The idea is that it is a webbsite for companies (also called filmstudio) to rent access to movies in cinimas. The project is not done yet, but I belive it still can show my skills and the idea behind it.","tags":"API, Notification, Authentication, HTML and C#","githubLink":"https://github.com/SERUSEcode/filmstudion-SERUSEcode","video":"linktomy fancuvdeio 2"},{"id":2,"title":"API JWT Token authentication","description":"Short showcase on how to use an API with JWT Tokens for create and autenticate an account. Note that the password is not encrypted yet. Comes with next patch","tags":"C#, JWT, Authentication and Login ","githubLink":"https://github.com/SERUSEcode/JWTTokenLogin","video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":3,"title":"Api and Notification Test","description":"This showcases me creating notification for both adriod and IoS with help of Azure. This is one part of a project I did in my intership. Sadly the project come to a standstill when the leading person of the project became ill and other project became proitized. Testing this project can be tricky and is not the idea. Rather take a look on how I code it instead.","tags":"C#, API and Notification","githubLink":"https://github.com/SERUSEcode/Azure-Notification","video":"linktomy fancuvdeio 2"},{"id":4,"title":"ProjektMeddelandecentralen","description":"This is one of my first API projects ever done. It shows an easy example of GET, POST and DELETE. But also APIs working with databases","tags":"C#, API and Database","githubLink":"https://github.com/SERUSEcode/ProjektMeddelandecentralen","video":"linktomy fancuvdeio 3"}]');
+
+},{}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("react-refresh/runtime");
 function debounce(func, delay) {
@@ -10164,537 +10174,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}],"19zz7":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b09d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b09d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _contactJson = require("../../data/databas/contact.json");
-var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
-const AboutMe = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "aboutme",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "title",
-                children: [
-                    "Kevin Ullbrandt",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 11,
-                        columnNumber: 17
-                    }, undefined),
-                    (0, _contactJsonDefault.default)[0].title
-                ]
-            }, void 0, true, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "standardtext",
-                children: "Maecenas posuere, ex et tincidunt hendrerit, lectus ipsum lacinia dolor, eget commodo purus sem vitae turpis. Ut tristique mi et convallis imperdiet. Morbi volutpat quam et"
-            }, void 0, false, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 14,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "title",
-                children: "Contact"
-            }, void 0, false, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 21,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "standardtext",
-                children: [
-                    "Phone: ",
-                    (0, _contactJsonDefault.default)[0].phone,
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 27,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 27,
-                        columnNumber: 23
-                    }, undefined),
-                    "E-mail: ",
-                    (0, _contactJsonDefault.default)[0].email,
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 29,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                        fileName: "src/views/aboutme/AboutMe.jsx",
-                        lineNumber: 29,
-                        columnNumber: 23
-                    }, undefined),
-                    "LinkedIn: ",
-                    (0, _contactJsonDefault.default)[0].linkedin
-                ]
-            }, void 0, true, {
-                fileName: "src/views/aboutme/AboutMe.jsx",
-                lineNumber: 24,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/views/aboutme/AboutMe.jsx",
-        lineNumber: 8,
-        columnNumber: 9
-    }, undefined);
-};
-_c = AboutMe;
-exports.default = AboutMe;
-var _c;
-$RefreshReg$(_c, "AboutMe");
-
-  $parcel$ReactRefreshHelpers$b09d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/contact.json":"cAwu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cAwu7":[function(require,module,exports) {
-module.exports = JSON.parse('[{"title":".Net & Fullstack utvecklare","phone":"0793374078","email":"kevin@ullbrandt.com","linkedin":"linkedin@link.com"}]');
-
-},{}],"ekgNX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b750 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b750.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _contactJson = require("../../data/databas/contact.json");
-var _contactJsonDefault = parcelHelpers.interopDefault(_contactJson);
-const AboutMeStrip = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            id: "WelcomeStrip",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Welcome to my project website"
-                }, void 0, false, {
-                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
-                    lineNumber: 10,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "This site is for you who want a insight of my work and project i have done in the past."
-                }, void 0, false, {
-                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
-                    lineNumber: 11,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: [
-                        "You can take a closer look on how I created this webbsite ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "https://github.com/SERUSEcode/ShowcaseSite/tree/main",
-                            children: "by cliking here"
-                        }, void 0, false, {
-                            fileName: "src/views/aboutme/AboutMeStrip.jsx",
-                            lineNumber: 15,
-                            columnNumber: 79
-                        }, undefined),
-                        "."
-                    ]
-                }, void 0, true, {
-                    fileName: "src/views/aboutme/AboutMeStrip.jsx",
-                    lineNumber: 14,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/views/aboutme/AboutMeStrip.jsx",
-            lineNumber: 9,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/views/aboutme/AboutMeStrip.jsx",
-        lineNumber: 8,
-        columnNumber: 9
-    }, undefined);
-};
-_c = AboutMeStrip;
-exports.default = AboutMeStrip;
-var _c;
-$RefreshReg$(_c, "AboutMeStrip");
-
-  $parcel$ReactRefreshHelpers$b750.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/contact.json":"cAwu7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9NGVu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ab96 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ab96.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _houseDoorSvg = require("../../../node_modules/bootstrap-icons/icons/house-door.svg");
-var _houseDoorSvgDefault = parcelHelpers.interopDefault(_houseDoorSvg);
-var _houseDoorFillSvg = require("../../../node_modules/bootstrap-icons/icons/house-door-fill.svg");
-var _houseDoorFillSvgDefault = parcelHelpers.interopDefault(_houseDoorFillSvg);
-var _boxSvg = require("../../../node_modules/bootstrap-icons/icons/box.svg");
-var _boxSvgDefault = parcelHelpers.interopDefault(_boxSvg);
-var _boxFillSvg = require("../../../node_modules/bootstrap-icons/icons/box-fill.svg");
-var _boxFillSvgDefault = parcelHelpers.interopDefault(_boxFillSvg);
-var _journalsSvg = require("../../../node_modules/bootstrap-icons/icons/journals.svg");
-var _journalsSvgDefault = parcelHelpers.interopDefault(_journalsSvg);
-const Navbar = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "navbar-container-mobile",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "navbar-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _houseDoorSvgDefault.default),
-                            alt: "Bootstrap",
-                            width: 40
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 18,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 19,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/views/navbar/Navbar.jsx",
-                    lineNumber: 17,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/navbar/Navbar.jsx",
-                lineNumber: 16,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/project",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "navbar-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _boxSvgDefault.default),
-                            alt: "Bootstrap",
-                            width: 40
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 25,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Project"
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 26,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/views/navbar/Navbar.jsx",
-                    lineNumber: 24,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/navbar/Navbar.jsx",
-                lineNumber: 23,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "/journal",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "navbar-box",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _journalsSvgDefault.default),
-                            alt: "Bootstrap",
-                            width: 40
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 32,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Journal"
-                        }, void 0, false, {
-                            fileName: "src/views/navbar/Navbar.jsx",
-                            lineNumber: 33,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/views/navbar/Navbar.jsx",
-                    lineNumber: 31,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/navbar/Navbar.jsx",
-                lineNumber: 30,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/views/navbar/Navbar.jsx",
-        lineNumber: 15,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Navbar;
-exports.default = Navbar;
-var _c;
-$RefreshReg$(_c, "Navbar");
-
-  $parcel$ReactRefreshHelpers$ab96.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../../node_modules/bootstrap-icons/icons/house-door.svg":"gspkK","../../../node_modules/bootstrap-icons/icons/house-door-fill.svg":"4yIEI","../../../node_modules/bootstrap-icons/icons/box.svg":"7mfr3","../../../node_modules/bootstrap-icons/icons/box-fill.svg":"33p25","../../../node_modules/bootstrap-icons/icons/journals.svg":"e0jyR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gspkK":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "house-door.4a165fb6.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"4yIEI":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "house-door-fill.5d5fb008.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"7mfr3":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "box.0449adf9.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"33p25":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "box-fill.db3b838b.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"e0jyR":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "journals.adbff886.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"3VfVf":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bcef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bcef.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _projectsJson = require("../../data/databas/projects.json");
-var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
-async function GetRepositorys() {
-    const response = await fetch(`https://api.github.com/users/SERUSEcode/starred`);
-    let data = await response.json();
-    console.log(data);
-    return data;
-}
-_c = GetRepositorys;
-const BrowseProjects = ()=>{
-    // useEffect(() => {
-    //     // declare the data fetching function
-    //     const fetchData = async () => {
-    //         const response = await fetch('https://api.github.com/users/SERUSEcode/starred');
-    //         const data = await response.json();
-    //         setData(data);
-    //     }
-    //     const result = fetchData()
-    //     console.log(result);
-    // });
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
-        id: "container-BrowseProjects",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "title",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "My projects"
-                }, void 0, false, {
-                    fileName: "src/views/project/BrowseProjects.jsx",
-                    lineNumber: 37,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 36,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                id: "container-Projects",
-                children: (0, _projectsJsonDefault.default).map((project, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "linkToProject",
-                        href: `project/${project.id}`,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "project-container",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "title",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: project.title
-                                    }, void 0, false, {
-                                        fileName: "src/views/project/BrowseProjects.jsx",
-                                        lineNumber: 45,
-                                        columnNumber: 33
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 44,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "standardtext",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: project.description
-                                        }, void 0, false, {
-                                            fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 48,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: project.time
-                                        }, void 0, false, {
-                                            fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 49,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: [
-                                                "Link to Github: ",
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: `${project.githubLink}`,
-                                                    children: project.githubLink
-                                                }, void 0, false, {
-                                                    fileName: "src/views/project/BrowseProjects.jsx",
-                                                    lineNumber: 50,
-                                                    columnNumber: 52
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 50,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            children: project.tags
-                                        }, void 0, false, {
-                                            fileName: "src/views/project/BrowseProjects.jsx",
-                                            lineNumber: 51,
-                                            columnNumber: 33
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/views/project/BrowseProjects.jsx",
-                                    lineNumber: 47,
-                                    columnNumber: 29
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/views/project/BrowseProjects.jsx",
-                            lineNumber: 43,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/views/project/BrowseProjects.jsx",
-                        lineNumber: 42,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 40,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "scrollFed"
-            }, void 0, false, {
-                fileName: "src/views/project/BrowseProjects.jsx",
-                lineNumber: 57,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/views/project/BrowseProjects.jsx",
-        lineNumber: 35,
-        columnNumber: 9
-    }, undefined);
-};
-_c1 = BrowseProjects;
-exports.default = BrowseProjects;
-var _c, _c1;
-$RefreshReg$(_c, "GetRepositorys");
-$RefreshReg$(_c1, "BrowseProjects");
-
-  $parcel$ReactRefreshHelpers$bcef.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../data/databas/projects.json":"iafBU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iafBU":[function(require,module,exports) {
-module.exports = JSON.parse('[{"id":1,"title":"Filmstudion","description":"This project is made to showcase API, Databases and Autentication. The idea is that it is a webbsite for companies (also called filmstudio) to rent access to movies in cinimas. The project is not done yet, but I belive it still can show my skills and the idea behind it.","tags":"API, Notification, Authentication, HTML and C#","githubLink":"https://github.com/SERUSEcode/filmstudion-SERUSEcode","video":"linktomy fancuvdeio 2"},{"id":2,"title":"API JWT Token authentication","description":"Short showcase on how to use an API with JWT Tokens for create and autenticate an account. Note that the password is not encrypted yet. Comes with next patch","tags":"C#, JWT, Authentication and Login ","githubLink":"https://github.com/SERUSEcode/JWTTokenLogin","video":{"text":"H\xe4r f\xf6rklarar jag hur jag skapade projektet","url":"www.fakelink1ToVideo.com"}},{"id":3,"title":"Api and Notification Test","description":"This showcases me creating notification for both adriod and IoS with help of Azure. This is one part of a project I did in my intership. Sadly the project come to a standstill when the leading person of the project became ill and other project became proitized. Testing this project can be tricky and is not the idea. Rather take a look on how I code it instead.","tags":"C#, API and Notification","githubLink":"https://github.com/SERUSEcode/Azure-Notification","video":"linktomy fancuvdeio 2"},{"id":4,"title":"ProjektMeddelandecentralen","description":"This is one of my first API projects ever done. It shows an easy example of GET, POST and DELETE. But also APIs working with databases","tags":"C#, API and Database","githubLink":"https://github.com/SERUSEcode/ProjektMeddelandecentralen","video":"linktomy fancuvdeio 3"}]');
-
-},{}],"cbKWM":[function(require,module,exports) {
+},{"react-refresh/runtime":"786KC"}],"cbKWM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c41a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -10710,6 +10190,7 @@ var _reactRouterDom = require("react-router-dom");
 var _projectsJson = require("../../data/databas/projects.json");
 var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
 var _s = $RefreshSig$();
+//NOTE: Prints all the projects
 const Project = ()=>{
     _s();
     const params = (0, _reactRouterDom.useParams)();
@@ -10724,12 +10205,12 @@ const Project = ()=>{
                     children: selProject.name
                 }, void 0, false, {
                     fileName: "src/views/project/Project.jsx",
-                    lineNumber: 16,
+                    lineNumber: 17,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/views/project/Project.jsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -10739,42 +10220,42 @@ const Project = ()=>{
                         children: "Description"
                     }, void 0, false, {
                         fileName: "src/views/project/Project.jsx",
-                        lineNumber: 21,
+                        lineNumber: 20,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: selProject.detailedDescription
                     }, void 0, false, {
                         fileName: "src/views/project/Project.jsx",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                         children: "Videos"
                     }, void 0, false, {
                         fileName: "src/views/project/Project.jsx",
-                        lineNumber: 24,
+                        lineNumber: 23,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: selProject.video.text
                     }, void 0, false, {
                         fileName: "src/views/project/Project.jsx",
-                        lineNumber: 25,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: selProject.video.url
                     }, void 0, false, {
                         fileName: "src/views/project/Project.jsx",
-                        lineNumber: 26,
+                        lineNumber: 25,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                         children: "Links"
                     }, void 0, false, {
                         fileName: "src/views/project/Project.jsx",
-                        lineNumber: 28,
+                        lineNumber: 27,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -10785,25 +10266,25 @@ const Project = ()=>{
                                 children: selProject.github.url
                             }, void 0, false, {
                                 fileName: "src/views/project/Project.jsx",
-                                lineNumber: 31,
+                                lineNumber: 30,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/views/project/Project.jsx",
-                        lineNumber: 29,
+                        lineNumber: 28,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/views/project/Project.jsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/views/project/Project.jsx",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 9
     }, undefined);
 };
@@ -10837,6 +10318,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _browseProjects = require("../project/BrowseProjects");
 var _browseProjectsDefault = parcelHelpers.interopDefault(_browseProjects);
 var _s = $RefreshSig$();
+// NOTE : Used for start screen
 const FrontPage = ()=>{
     _s();
     const BrowseProjectsRef = (0, _react.useRef)(null);
@@ -10857,7 +10339,7 @@ const FrontPage = ()=>{
                     children: "Kevin Ullbrandt"
                 }, void 0, false, {
                     fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 19,
+                    lineNumber: 20,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -10866,33 +10348,33 @@ const FrontPage = ()=>{
                     children: "SOFTWARE DEVELOPER"
                 }, void 0, false, {
                     fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 21,
+                    lineNumber: 22,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "#WelcomeStrip",
+                    href: "#container-BrowseProjects",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "arrow",
                         id: "down-btn"
                     }, void 0, false, {
                         fileName: "src/views/StartPage/FrontPage.jsx",
-                        lineNumber: 27,
+                        lineNumber: 25,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/views/StartPage/FrontPage.jsx",
-                    lineNumber: 26,
+                    lineNumber: 24,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/views/StartPage/FrontPage.jsx",
-            lineNumber: 18,
+            lineNumber: 19,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/views/StartPage/FrontPage.jsx",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 9
     }, undefined);
 };

@@ -18,13 +18,13 @@ body, html {
   }
 }
 
-#WelcomeStrip {
+.centered-div {
+  height: 100vh;
   text-align: center;
-  background-color: #fff;
-  border-radius: 15px;
-  margin: 0 15%;
-  font-family: Pragati Narrow, sans-serif;
-  font-size: 35px;
+  background-color: #181a1e;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .custom-button {
@@ -37,24 +37,20 @@ body, html {
   font-weight: 400;
 }
 
-.centered-div {
-  height: 100vh;
-  background-color: #181a1e;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.TestColor {
-  text-align: center;
-  background-color: #181a1e;
-}
-
 .header-image {
   height: 390px;
   background-image: url("head-background2.999792da.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#WelcomeStrip {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0 15%;
+  font-family: Pragati Narrow, sans-serif;
+  font-size: 35px;
 }
 
 .linkToProject .title p {
@@ -69,7 +65,7 @@ body, html {
 #container-BrowseProjects {
   height: 100%;
   color: #fff;
-  background-color: #18191a;
+  background-color: #181a1e;
 }
 
 #container-Projects {

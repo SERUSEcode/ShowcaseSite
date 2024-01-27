@@ -2,6 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import BrowseProjects from '../project/BrowseProjects';
 
+// NOTE : Used for start screen
 
 const FrontPage = () => {
     const BrowseProjectsRef = useRef(null);
@@ -20,14 +21,10 @@ const FrontPage = () => {
                 
                 <p id="myRole" className="text">SOFTWARE DEVELOPER</p>
                 
-                {/* <a href="/homePage">
-                    <button class="custom-button">Click me</button>
-                </a> href="/homePage"*/}
-                <a  href="#WelcomeStrip">
+                <a  href="#container-BrowseProjects">
                     <div className="arrow" id="down-btn"></div>
                 </a>
             </div>
-            {/* <div ref={BrowseProjectsRef} id="track" /> */}
         </div>
     );
 }
