@@ -5648,37 +5648,31 @@ var _frontPage = require("./views/StartPage/FrontPage"); //print one project
 var _frontPageDefault = parcelHelpers.interopDefault(_frontPage);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "PC",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                        exact: true,
-                        path: "/",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frontPageDefault.default), {}, void 0, false, void 0, void 0),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contentDefault.default), {}, void 0, false, void 0, void 0)
-                            ]
-                        }, void 0, true)
-                    }, void 0, false, {
-                        fileName: "src/App.jsx",
-                        lineNumber: 51,
-                        columnNumber: 25
-                    }, undefined)
+        className: "PC",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                    exact: true,
+                    path: "/",
+                    element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frontPageDefault.default), {}, void 0, false, void 0, void 0),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contentDefault.default), {}, void 0, false, void 0, void 0)
+                        ]
+                    }, void 0, true)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 50,
+                    lineNumber: 20,
                     columnNumber: 21
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 49,
+                lineNumber: 19,
                 columnNumber: 17
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 48,
+            lineNumber: 18,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
@@ -10148,13 +10142,12 @@ var _projectsJsonDefault = parcelHelpers.interopDefault(_projectsJson);
 const BrowseProjects = ()=>{
     var i = 0;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
         id: "container-BrowseProjects",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "title",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "My projects"
+                    children: "MY PROJECTS"
                 }, void 0, false, {
                     fileName: "src/views/project/BrowseProjects.jsx",
                     lineNumber: 13,
@@ -10311,9 +10304,8 @@ const FrontPage = ()=>{
         });
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "centered-div",
+        id: "centered-div",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "TestColor",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     id: "myName",

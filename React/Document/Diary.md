@@ -49,6 +49,14 @@
 -removed the phone version so theres only a pc version bc the phone version was to ugly
 -Adding so all stared github repos are showed
 
+2023-01-26
+-Added 4 projects
+
 2023-01-27
 -changing projects
 -Looking to redo the design of project and welcome strip
+-Made a new design of the body of the website
+-Redid the hole body. 
+
+2023-01-28
+-Updating text

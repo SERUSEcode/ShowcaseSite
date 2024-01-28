@@ -15,8 +15,8 @@ const FrontPage = () => {
         });
     };
     return (
-        <div className="centered-div">
-            <div  className="TestColor">
+        <div id="centered-div">
+            <div>
                 <p id="myName" className="starttitletext">Kevin Ullbrandt</p>
                 
                 <p id="myRole" className="starttitletext">SOFTWARE DEVELOPER</p>
