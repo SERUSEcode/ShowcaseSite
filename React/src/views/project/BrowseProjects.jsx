@@ -8,9 +8,9 @@ const BrowseProjects = () => {
 
     var i = 0;
     return (
-        <div className="container" id="container-BrowseProjects">
+        <div id="container-BrowseProjects">
             <div className="title">
-                <p>My projects</p>
+                <p>MY PROJECTS</p>
             </div>
             <div id="container-Projects">
                 {dataSet.map((project, i) => 

@@ -14,47 +14,15 @@ import Content from "./views/content/Content";
 
 const App = () => {
     return (
-        <div>
-            {/* <div className="Mobile">
-                <BrowserRouter>
-                    <Routes>
-                        <Route exact path="/" element={<>
-                            <HeaderImage />
-                            <AboutMe />
-                            <Navbar />
-                        </> } />
-                        <Route exact path="/homePage" element={<>
-                            <HeaderImage />
-                            <AboutMe />
-                            <BrowseProjects />
-                        </> } />
-                        <Route exact path="/project" element={<>
-                            <BrowseProjects />
-                            <Navbar />
-                        </>} />
-                        <Route exact path="/project/:id" element={<>
-                            <Project />
-                            <Navbar />
-                        </> } />
-                        <Route exact path="/journal" element={<>
-                            <Navbar />  
-                        </> } />
-                        
-                    </Routes>
-                </BrowserRouter>
-                
-            </div> */}
-
-            <div className="PC">
-                <BrowserRouter>
-                    <Routes>
-                        <Route exact path="/" element={<>
-                            <FrontPage />
-                            <Content />  
-                        </> } />
-                    </Routes>
-                </BrowserRouter>
-            </div>
+        <div className="PC">
+            <BrowserRouter>
+                <Routes>
+                    <Route exact path="/" element={<>
+                        <FrontPage />
+                        <Content />  
+                    </> } />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 };
