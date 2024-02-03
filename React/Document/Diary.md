@@ -63,3 +63,6 @@
 
 2024-02-03
 I hope to fix it scalable for phone today. I have around 3 hours.   
+-I fixed the webbsite so its more responsive. It seemed I got weird effects when setting the scale with the screen size rather than a set size.
+-Added text to "about me" section
+-Fixed an SSL certificate.

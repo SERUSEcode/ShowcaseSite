@@ -9978,10 +9978,49 @@ const AboutMe = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "standardtext",
-                children: "Maecenas posuere, ex et tincidunt hendrerit, lectus ipsum lacinia dolor, eget commodo purus sem vitae turpis. Ut tristique mi et convallis imperdiet. Morbi volutpat quam et"
+                children: "Welcome to my website!"
             }, void 0, false, {
                 fileName: "src/views/aboutme/AboutMe.jsx",
                 lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "standardtext",
+                children: "My name is Kevin and I am software developer born in Link\xf6ping Sweden, currently based in Malta."
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 17,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "standardtext",
+                children: "My area of specialisation is in web development- I pursued my education at Jonk\xf6ping University and obtained my degree in 2023."
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 18,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 21,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "standardtext",
+                children: "I love nature, adventuring and learning new skills."
+            }, void 0, false, {
+                fileName: "src/views/aboutme/AboutMe.jsx",
+                lineNumber: 22,
                 columnNumber: 13
             }, undefined)
         ]
