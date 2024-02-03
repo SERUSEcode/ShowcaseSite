@@ -52,11 +52,14 @@
 2023-01-26
 -Added 4 projects
 
-2023-01-27
+2024-01-27
 -changing projects
 -Looking to redo the design of project and welcome strip
 -Made a new design of the body of the website
 -Redid the hole body. 
 
-2023-01-28
+2024-01-28
 -Updating text
+
+2024-02-03
+I hope to fix it scalable for phone today. I have around 3 hours.   
